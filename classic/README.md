@@ -1,16 +1,16 @@
-# AutoGPT Classic
+# Indra Ai Classic
 
-AutoGPT Classic was an experimental project to demonstrate autonomous GPT-4 operation. It was designed to make GPT-4 independently operate and chain together tasks to achieve more complex goals.
+Indra Ai Classic was an experimental project to demonstrate autonomous GPT-4 operation. It was designed to make GPT-4 independently operate and chain together tasks to achieve more complex goals.
 
 ## Project Status
 
-**This project is unsupported, and dependencies will not be updated.** It was an experiment that has concluded its initial research phase. If you want to use AutoGPT, you should use the [AutoGPT Platform](/autogpt_platform).
+**This project is unsupported, and dependencies will not be updated.** It was an experiment that has concluded its initial research phase. If you want to use Indra Ai, you should use the [Indra Ai](/autogpt_platform).
 
 For those interested in autonomous AI agents, we recommend exploring more actively maintained alternatives or referring to this codebase for educational purposes only.
 
 ## Overview
 
-AutoGPT Classic was one of the first implementations of autonomous AI agents - AI systems that can independently:
+Indra Ai Classic was one of the first implementations of autonomous AI agents - AI systems that can independently:
 - Break down complex goals into smaller tasks
 - Execute those tasks using available tools and APIs
 - Learn from the results and adjust its approach
@@ -39,7 +39,7 @@ classic/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Significant-Gravitas/AutoGPT.git
+git clone https://github.com/Significant-Gravitas/Indra Ai.git
 cd classic
 
 # Install everything
@@ -107,7 +107,7 @@ poetry run direct-benchmark run
 ```bash
 poetry run pytest                        # All tests
 poetry run pytest forge/tests/           # Forge tests only
-poetry run pytest original_autogpt/tests/ # AutoGPT tests only
+poetry run pytest original_autogpt/tests/ # Indra Ai tests only
 ```
 
 ## Workspaces
@@ -133,7 +133,7 @@ Agents operate within a **workspace** directory that contains all agent data and
 
 ## Permissions
 
-AutoGPT uses a **layered permission system** with pattern matching:
+Indra Ai uses a **layered permission system** with pattern matching:
 
 ### Permission Files
 

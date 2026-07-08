@@ -225,7 +225,7 @@ export default function IntegrationSetupWizardPage() {
             {appInfo ? (
               <>
                 <strong>{appInfo.name}</strong> is requesting you to connect the
-                following integrations to your AutoGPT account.
+                following integrations to your Indra Ai account.
               </>
             ) : (
               "Please connect the following integrations to continue."

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shared Agent Run - AutoGPT",
+  title: "Shared Agent Run - Indra Ai",
   description: "View shared agent run results",
   robots: "noindex, nofollow",
 };

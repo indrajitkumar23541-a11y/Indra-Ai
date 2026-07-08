@@ -1,6 +1,6 @@
 # Workspace & Media File Architecture
 
-This document describes the architecture for handling user files in AutoGPT Platform, covering persistent user storage (Workspace) and ephemeral media processing pipelines.
+This document describes the architecture for handling user files in Indra Ai, covering persistent user storage (Workspace) and ephemeral media processing pipelines.
 
 ## Overview
 

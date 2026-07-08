@@ -1,14 +1,14 @@
-# **How to Delete an Agent in AutoGPT**
+# **How to Delete an Agent in Indra Ai**
 
 ## **Overview**
 
-Is your AutoGPT Monitor getting cluttered or did you create an agent you no longer see? Learn how to quickly delete unwanted agents. 
+Is your Indra Ai Monitor getting cluttered or did you create an agent you no longer see? Learn how to quickly delete unwanted agents. 
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/oMZklozNga4?si=b2ubsGd5AST0gN-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
 ## **Steps to Delete an Agent**
 1. **Locate the Agent**
-    * Navigate to the Monitor Tab in the AutoGPT builder
+    * Navigate to the Monitor Tab in the Indra Ai builder
     * Find the agent you want to delete from the list
 2. **Select the Agent**
     * Click on the agent you wish to delete

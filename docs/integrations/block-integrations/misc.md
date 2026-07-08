@@ -41,7 +41,7 @@ Input and output schemas define the expected data structure for communication be
 ## AutoPilot
 
 ### What it is
-Execute tasks using AutoGPT AutoPilot with full access to platform tools (agent management, workspace files, web fetch, block execution, and more). Enables sub-agent patterns and scheduled autopilot execution.
+Execute tasks using Indra Ai AutoPilot with full access to platform tools (agent management, workspace files, web fetch, block execution, and more). Enables sub-agent patterns and scheduled autopilot execution.
 
 ### How it works
 <!-- MANUAL: how_it_works -->

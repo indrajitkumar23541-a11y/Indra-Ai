@@ -28,7 +28,7 @@ export function SuccessView({ linkType, platform, serverName }: Props) {
           variant="body-medium"
           className="text-center text-muted-foreground"
         >
-          <strong>{label}</strong> is now connected to your AutoGPT account.
+          <strong>{label}</strong> is now connected to your Indra Ai account.
           <br />
           {detail}
         </Text>

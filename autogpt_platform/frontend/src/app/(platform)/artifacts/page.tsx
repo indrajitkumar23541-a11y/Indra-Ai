@@ -51,7 +51,7 @@ export default function ArtifactsPage() {
   } = useArtifactsPage();
 
   useEffect(() => {
-    document.title = "Files – AutoGPT Platform";
+    document.title = "Files – Indra Ai";
   }, []);
 
   if (!flagReady) {

@@ -1,16 +1,16 @@
-# AutoGPT Platform OAuth Integration Guide
+# Indra Ai OAuth Integration Guide
 
-This guide explains how to integrate your application with AutoGPT Platform using OAuth 2.0. OAuth can be used for API access, Single Sign-On (SSO), or both.
+This guide explains how to integrate your application with Indra Ai using OAuth 2.0. OAuth can be used for API access, Single Sign-On (SSO), or both.
 
 For general API information and endpoint documentation, see the [API Guide](api-guide.md) and the [Swagger documentation](https://backend.agpt.co/external-api/docs).
 
 ## Overview
 
-AutoGPT Platform's OAuth implementation supports multiple use cases:
+Indra Ai's OAuth implementation supports multiple use cases:
 
 ### OAuth for API Access
 
-Use OAuth when your application needs to call AutoGPT APIs on behalf of users. This is the most common use case for third-party integrations.
+Use OAuth when your application needs to call Indra Ai APIs on behalf of users. This is the most common use case for third-party integrations.
 
 **When to use:**
 
@@ -18,25 +18,25 @@ Use OAuth when your application needs to call AutoGPT APIs on behalf of users. T
 - You want user-specific permissions rather than a single API key
 - Users should be able to revoke access to your app
 
-### SSO: "Sign in with AutoGPT"
+### SSO: "Sign in with Indra Ai"
 
-Use SSO when you want users to sign in to your app through their AutoGPT account. Request the `IDENTITY` scope to get user information.
+Use SSO when you want users to sign in to your app through their Indra Ai account. Request the `IDENTITY` scope to get user information.
 
 **When to use:**
 
-- You want to use AutoGPT as an identity provider
-- Users already have AutoGPT accounts and you want seamless login
+- You want to use Indra Ai as an identity provider
+- Users already have Indra Ai accounts and you want seamless login
 - You need to identify users without managing passwords
 
 **Note:** SSO and API access can be combined. Request `IDENTITY` along with other scopes to both authenticate users and access APIs on their behalf.
 
 ### Integration Setup Wizard
 
-A separate flow that guides users through connecting third-party services (GitHub, Google, etc.) to their AutoGPT account. See [Integration Setup Wizard](#integration-setup-wizard) below.
+A separate flow that guides users through connecting third-party services (GitHub, Google, etc.) to their Indra Ai account. See [Integration Setup Wizard](#integration-setup-wizard) below.
 
 ## Prerequisites
 
-Before integrating, you need an OAuth application registered with AutoGPT Platform. Contact the platform administrator to obtain:
+Before integrating, you need an OAuth application registered with Indra Ai. Contact the platform administrator to obtain:
 
 - **Client ID** - Public identifier for your application
 - **Client Secret** - Secret key for authenticating your application (keep this secure!)
@@ -48,7 +48,7 @@ The OAuth flow is technically the same whether you're using it for API access, S
 
 ### Step 1: Redirect User to Authorization
 
-Redirect the user to the AutoGPT authorization page with the required parameters:
+Redirect the user to the Indra Ai authorization page with the required parameters:
 
 ```url
 https://platform.agpt.co/auth/authorize?
@@ -182,7 +182,7 @@ Content-Type: application/json
 
 ## Integration Setup Wizard
 
-The Integration Setup Wizard guides users through connecting third-party services (like GitHub, Google, etc.) to their AutoGPT account. This is useful when your application needs users to have specific integrations configured.
+The Integration Setup Wizard guides users through connecting third-party services (like GitHub, Google, etc.) to their Indra Ai account. This is useful when your application needs users to have specific integrations configured.
 
 ### Redirect to the Wizard
 
@@ -435,6 +435,6 @@ Content-Type: application/json
 
 For issues or questions about OAuth integration:
 
-- Open an issue on [GitHub](https://github.com/Significant-Gravitas/AutoGPT)
+- Open an issue on [GitHub](https://github.com/Significant-Gravitas/Indra Ai)
 - See the [API Guide](api-guide.md) for general API information
 - Check the [Swagger documentation](https://backend.agpt.co/external-api/docs) for endpoint details

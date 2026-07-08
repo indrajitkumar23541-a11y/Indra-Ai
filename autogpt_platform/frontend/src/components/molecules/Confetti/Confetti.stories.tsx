@@ -244,7 +244,7 @@ function CelebrationDemo() {
         Congrats!
       </h1>
       <p className="text-lg text-purple-500">
-        AutoGPT purple-themed celebration
+        Indra Ai purple-themed celebration
       </p>
       <button
         onClick={celebrate}

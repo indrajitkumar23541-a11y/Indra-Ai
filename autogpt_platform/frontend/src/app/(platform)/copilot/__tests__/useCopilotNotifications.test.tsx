@@ -68,7 +68,7 @@ afterEach(() => {
 });
 
 describe("useCopilotNotifications — OS notification dispatch", () => {
-  it("fires a browser notification with the AutoGPT/Task completed copy and 192px icon when a non-active session completes off-screen", async () => {
+  it("fires a browser notification with the Indra Ai/Task completed copy and 192px icon when a non-active session completes off-screen", async () => {
     renderHook(() => useCopilotNotifications(null), { wrapper: makeWrapper() });
     expect(capturedHandler).not.toBeNull();
 

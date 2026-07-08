@@ -10,7 +10,7 @@ export function BotsHeader() {
           Bots
         </Text>
         <Text variant="body" className="mt-4 max-w-[600px] text-zinc-600">
-          Connect AutoGPT bots to your chat platforms. Add a bot to one of your
+          Connect Indra Ai bots to your chat platforms. Add a bot to one of your
           servers, link a DM channel so the bot can talk to you directly, or
           unlink an existing connection.
         </Text>

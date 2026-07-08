@@ -482,7 +482,7 @@ export default function StyleguidePage() {
                           path: "platform/webhooks/configuration.md",
                           section: "Setup",
                           snippet:
-                            "Webhooks allow you to receive real-time notifications when events occur in your AutoGPT workspace. Configure webhook endpoints to integrate with external services.",
+                            "Webhooks allow you to receive real-time notifications when events occur in your Indra Ai workspace. Configure webhook endpoints to integrate with external services.",
                           doc_url:
                             "https://docs.agpt.co/platform/webhooks/configuration",
                         },
@@ -557,10 +557,10 @@ export default function StyleguidePage() {
                     input: { path: "platform/getting-started.md" },
                     output: {
                       type: ResponseType.doc_page,
-                      title: "Getting Started with AutoGPT Platform",
+                      title: "Getting Started with Indra Ai",
                       path: "platform/getting-started.md",
                       content:
-                        "Welcome to AutoGPT Platform! This guide will walk you through setting up your first agent.\n\n## Prerequisites\n- An AutoGPT account\n- Basic understanding of automation workflows\n\n## Quick Start\n1. Navigate to the Builder\n2. Create a new agent\n3. Add blocks to your workflow\n4. Test and deploy",
+                        "Welcome to Indra Ai! This guide will walk you through setting up your first agent.\n\n## Prerequisites\n- An Indra Ai account\n- Basic understanding of automation workflows\n\n## Quick Start\n1. Navigate to the Builder\n2. Create a new agent\n3. Add blocks to your workflow\n4. Test and deploy",
                       doc_url: "https://docs.agpt.co/platform/getting-started",
                     },
                   }}

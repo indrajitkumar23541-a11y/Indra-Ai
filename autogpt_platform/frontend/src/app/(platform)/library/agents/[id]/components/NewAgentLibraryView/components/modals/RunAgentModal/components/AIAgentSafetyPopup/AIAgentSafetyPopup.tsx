@@ -56,7 +56,7 @@ export function AIAgentSafetyPopup({ agentId, onAcknowledge, isOpen }: Props) {
           </Text>
 
           <Text variant="body" className="mb-8 text-zinc-700">
-            AutoGPT includes safety checks so you&apos;ll always have the
+            Indra Ai includes safety checks so you&apos;ll always have the
             opportunity to review and approve sensitive actions before they
             happen.
           </Text>

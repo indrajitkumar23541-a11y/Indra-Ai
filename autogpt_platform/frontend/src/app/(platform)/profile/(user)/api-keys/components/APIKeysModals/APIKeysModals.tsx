@@ -40,7 +40,7 @@ export const APIKeysModals = () => {
           <DialogHeader>
             <DialogTitle>Create New API Key</DialogTitle>
             <DialogDescription>
-              Create a new AutoGPT Platform API key
+              Create a new Indra Ai API key
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
@@ -55,7 +55,7 @@ export const APIKeysModals = () => {
                     newKeyName: e.target.value,
                   }))
                 }
-                placeholder="My AutoGPT Platform API Key"
+                placeholder="My Indra Ai API Key"
               />
             </div>
             <div className="grid gap-2">
@@ -109,9 +109,9 @@ export const APIKeysModals = () => {
       <Dialog open={isKeyDialogOpen} onOpenChange={setIsKeyDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>AutoGPT Platform API Key Created</DialogTitle>
+            <DialogTitle>Indra Ai API Key Created</DialogTitle>
             <DialogDescription>
-              Please copy your AutoGPT API key now. You won&apos;t be able to
+              Please copy your Indra Ai API key now. You won&apos;t be able to
               see it again!
             </DialogDescription>
           </DialogHeader>

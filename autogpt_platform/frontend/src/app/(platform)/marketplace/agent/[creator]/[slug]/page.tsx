@@ -26,7 +26,7 @@ export async function generateMetadata({
     params.slug,
   );
   return {
-    title: `${(creator_agent as StoreAgentDetails).agent_name} - AutoGPT Marketplace`,
+    title: `${(creator_agent as StoreAgentDetails).agent_name} - Indra Ai Marketplace`,
     description: (creator_agent as StoreAgentDetails).description,
   };
 }

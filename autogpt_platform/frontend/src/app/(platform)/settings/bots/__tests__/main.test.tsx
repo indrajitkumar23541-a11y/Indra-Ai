@@ -132,7 +132,7 @@ describe("SettingsBotsPage", () => {
               platform: "DISCORD",
               platform_server_id: "111",
               owner_platform_user_id: "u-1",
-              server_name: "AutoGPT HQ",
+              server_name: "Indra Ai HQ",
               linked_at: new Date("2024-01-01T00:00:00Z"),
             },
           ],
@@ -153,7 +153,7 @@ describe("SettingsBotsPage", () => {
     fireEvent.click(unlinkBtn);
 
     await waitFor(() => {
-      expect(screen.queryByText("AutoGPT HQ")).toBeNull();
+      expect(screen.queryByText("Indra Ai HQ")).toBeNull();
     });
   });
 

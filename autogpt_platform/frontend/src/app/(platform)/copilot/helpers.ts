@@ -5,7 +5,7 @@ import type { UIMessage } from "ai";
 import { deleteV2DisconnectSessionStream } from "@/app/api/__generated__/endpoints/chat/chat";
 import { TOOL_PART_PREFIX } from "./components/JobStatsBar/constants";
 
-export const ORIGINAL_TITLE = "AutoGPT";
+export const ORIGINAL_TITLE = "Indra Ai";
 
 /**
  * Title/body/icon for the OS-level notification fired when a copilot session
@@ -15,7 +15,7 @@ export const ORIGINAL_TITLE = "AutoGPT";
  * sources are matched by test rather than by reference.
  */
 export const COPILOT_COMPLETION_NOTIFICATION = {
-  title: "AutoGPT",
+  title: "Indra Ai",
   body: "Task completed",
   icon: "/notification-icon-192.png",
 } as const;

@@ -1,6 +1,6 @@
 # Security Policy
 
- - [**Using AutoGPT Securely**](#using-AutoGPT-securely)
+ - [**Using Indra Ai Securely**](#using-AutoGPT-securely)
    - [Restrict Workspace](#restrict-workspace)
    - [Untrusted inputs](#untrusted-inputs)
    - [Data privacy](#data-privacy)
@@ -8,13 +8,13 @@
    - [Multi-Tenant environments](#multi-tenant-environments)
  - [**Reporting a Vulnerability**](#reporting-a-vulnerability)
 
-## Using AutoGPT Securely
+## Using Indra Ai Securely
 
 ### Restrict Workspace
 
 Since agents can read and write files, it is important to keep them restricted to a specific workspace. This happens by default *unless* RESTRICT_TO_WORKSPACE is set to False.
 
-Disabling RESTRICT_TO_WORKSPACE can increase security risks. However, if you still need to disable it, consider running AutoGPT inside a [sandbox](https://developers.google.com/code-sandboxing), to mitigate some of these risks.
+Disabling RESTRICT_TO_WORKSPACE can increase security risks. However, if you still need to disable it, consider running Indra Ai inside a [sandbox](https://developers.google.com/code-sandboxing), to mitigate some of these risks.
 
 ### Untrusted inputs
 
@@ -23,7 +23,7 @@ When handling untrusted inputs, it's crucial to isolate the execution and carefu
 For maximum security when handling untrusted inputs, you may need to employ the following:
 
 * Sandboxing: Isolate the process.
-* Updates: Keep your libraries (including AutoGPT) updated with the latest security patches.
+* Updates: Keep your libraries (including Indra Ai) updated with the latest security patches.
 * Input Sanitation: Before feeding data to the model, sanitize inputs rigorously. This involves techniques such as:
     * Validation: Enforce strict rules on allowed characters and data types.
     * Filtering: Remove potentially malicious scripts or code fragments.
@@ -36,14 +36,14 @@ To protect sensitive data from potential leaks or unauthorized access, it is cru
 
 ### Untrusted environments or networks
 
-Since AutoGPT performs network calls to the OpenAI API, it is important to always run it with trusted environments and networks. Running it on untrusted environments can expose your API KEY to attackers.
+Since Indra Ai performs network calls to the OpenAI API, it is important to always run it with trusted environments and networks. Running it on untrusted environments can expose your API KEY to attackers.
 Additionally, running it on an untrusted network can expose your data to potential network attacks. 
 
 However, even when running on trusted networks, it is important to always encrypt sensitive data while sending it over the network.
 
 ### Multi-Tenant environments
 
-If you intend to run multiple AutoGPT brains in parallel, it is your responsibility to ensure the models do not interact or access each other's data.
+If you intend to run multiple Indra Ai brains in parallel, it is your responsibility to ensure the models do not interact or access each other's data.
 
 The primary areas of concern are tenant isolation, resource allocation, model sharing and hardware attacks.
 
@@ -57,10 +57,10 @@ The primary areas of concern are tenant isolation, resource allocation, model sh
 
 ## Reporting a Vulnerability
 
-Beware that none of the topics under [Using AutoGPT Securely](#using-AutoGPT-securely) are considered vulnerabilities on AutoGPT.
+Beware that none of the topics under [Using Indra Ai Securely](#using-AutoGPT-securely) are considered vulnerabilities on Indra Ai.
 
 However, If you have discovered a security vulnerability in this project, please report it privately. **Do not disclose it as a public issue.** This gives us time to work with you to fix the issue before public exposure, reducing the chance that the exploit will be used before a patch is released.
 
-Please disclose it as a private [security advisory](https://github.com/Significant-Gravitas/AutoGPT/security/advisories/new).
+Please disclose it as a private [security advisory](https://github.com/Significant-Gravitas/Indra Ai/security/advisories/new).
 
 A team of volunteers on a reasonable-effort basis maintains this project. As such, please give us at least 90 days to work on a fix before public exposure.

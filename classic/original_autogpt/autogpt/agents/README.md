@@ -8,9 +8,9 @@ Agent is composed of [🧩 Components](./components.md) and responsible for exec
 1. `propose_action`: This method is responsible for proposing an action based on the current state of the agent, it returns `ThoughtProcessOutput`.
 2. `execute`: This method is responsible for executing the proposed action, returns `ActionResult`.
 
-## AutoGPT Agent
+## Indra Ai Agent
 
-`Agent` is the main agent provided by AutoGPT. It's a subclass of `BaseAgent`. It has all the [Built-in Components](./built-in-components.md). `Agent` implements the essential abstract methods from `BaseAgent`: `propose_action` and `execute`.
+`Agent` is the main agent provided by Indra Ai. It's a subclass of `BaseAgent`. It has all the [Built-in Components](./built-in-components.md). `Agent` implements the essential abstract methods from `BaseAgent`: `propose_action` and `execute`.
 
 ## Building your own Agent
 
@@ -34,4 +34,4 @@ class MyAgent(Agent):
         self.my_component = MyComponent()
 ```
 
-For more customization, you can override the `propose_action` and `execute` or even subclass `BaseAgent` directly. This way you can have full control over the agent's components and behavior. Have a look at the [implementation of Agent](https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/original_autogpt/agents/agent.py) for more details.
+For more customization, you can override the `propose_action` and `execute` or even subclass `BaseAgent` directly. This way you can have full control over the agent's components and behavior. Have a look at the [implementation of Agent](https://github.com/Significant-Gravitas/Indra Ai/tree/master/classic/original_autogpt/agents/agent.py) for more details.

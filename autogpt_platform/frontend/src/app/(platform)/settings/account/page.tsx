@@ -13,7 +13,7 @@ import { usePreferencesPage } from "./usePreferencesPage";
 
 export default function SettingsPreferencesPage() {
   useEffect(() => {
-    document.title = "Account – AutoGPT Platform";
+    document.title = "Account – Indra Ai";
   }, []);
 
   const {

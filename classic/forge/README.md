@@ -1,4 +1,4 @@
-# AutoGPT Forge
+# Indra Ai Forge
 
 Core autonomous agent framework for building AI agents.
 

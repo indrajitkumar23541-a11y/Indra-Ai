@@ -29,7 +29,7 @@ export const settingsNavItems: SettingsNavItem[] = [
     Icon: PlugsConnectedIcon,
   },
   { label: "Bots", href: "/settings/bots", Icon: ChatsCircleIcon },
-  { label: "AutoGPT API Keys", href: "/settings/api-keys", Icon: KeyIcon },
+  { label: "Indra Ai API Keys", href: "/settings/api-keys", Icon: KeyIcon },
   {
     label: "Creator Dashboard",
     href: "/settings/creator-dashboard",

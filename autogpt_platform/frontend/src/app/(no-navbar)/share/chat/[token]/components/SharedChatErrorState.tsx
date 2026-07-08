@@ -28,7 +28,7 @@ export function SharedChatErrorState({ onRetry }: Props) {
           </button>
         </div>
         <p className="mt-8 text-center text-xs text-zinc-400">
-          Powered by AutoGPT Platform
+          Powered by Indra Ai
         </p>
       </div>
     </div>

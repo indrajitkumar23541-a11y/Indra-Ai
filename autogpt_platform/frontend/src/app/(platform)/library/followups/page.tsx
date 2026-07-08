@@ -15,7 +15,7 @@ export default function FollowupsPage() {
   const { schedules, isLoading, error } = useFollowupsPage();
 
   useEffect(() => {
-    document.title = "Scheduled – AutoGPT Platform";
+    document.title = "Scheduled – Indra Ai";
   }, []);
 
   return (

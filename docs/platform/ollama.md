@@ -1,12 +1,12 @@
-# Running Ollama with AutoGPT
+# Running Ollama with Indra Ai
 
-> **Important**: Ollama integration is only available when self-hosting the AutoGPT platform. It cannot be used with the cloud-hosted version.
+> **Important**: Ollama integration is only available when self-hosting the Indra Ai platform. It cannot be used with the cloud-hosted version.
 
-Follow these steps to set up and run Ollama with the AutoGPT platform.
+Follow these steps to set up and run Ollama with the Indra Ai platform.
 
 ## Prerequisites
 
-1. Make sure you have gone through and completed the [AutoGPT Setup](/platform/getting-started) steps, if not please do so before continuing with this guide.
+1. Make sure you have gone through and completed the [Indra Ai Setup](/platform/getting-started) steps, if not please do so before continuing with this guide.
 2. Before starting, ensure you have [Ollama installed](https://ollama.com/download) on your machine.
 
 ## Setup Steps
@@ -52,7 +52,7 @@ To properly set up Ollama for network access, choose one of these methods:
        ```
 
     !!! note
-        The Docker method automatically exposes Ollama on `0.0.0.0:11434`, making it accessible to AutoGPT. More models can be found on the [Ollama library](https://ollama.com/library).
+        The Docker method automatically exposes Ollama on `0.0.0.0:11434`, making it accessible to Indra Ai. More models can be found on the [Ollama library](https://ollama.com/library).
 
 ??? warning "Method C: Using Ollama Via Command Line (Legacy)"
 
@@ -83,7 +83,7 @@ To properly set up Ollama for network access, choose one of these methods:
     !!! note
         This will download the [llama3.2](https://ollama.com/library/llama3.2) model. Keep the terminal with `ollama serve` running in the background throughout your session.
 
-### 2. Start the AutoGPT Platform
+### 2. Start the Indra Ai
 
 Navigate to the autogpt_platform directory and start all services:
 
@@ -94,9 +94,9 @@ docker compose up -d --build
 
 This command starts both the backend and frontend services. Once running, visit [http://localhost:3000](http://localhost:3000) to access the platform. After registering/logging in, navigate to the build page at [http://localhost:3000/build](http://localhost:3000/build).
 
-### 3. Using Ollama with AutoGPT
+### 3. Using Ollama with Indra Ai
 
-Now that both Ollama and the AutoGPT platform are running, we can use Ollama with AutoGPT:
+Now that both Ollama and the Indra Ai platform are running, we can use Ollama with Indra Ai:
 
 1. Add an AI Text Generator block to your workspace (it can work with any AI LLM block but for this example will be using the AI Text Generator block):
    ![Add AI Text Generator Block](../imgs/ollama/Select-AI-block.png)
@@ -106,7 +106,7 @@ Now that both Ollama and the AutoGPT platform are running, we can use Ollama wit
 3. In the "LLM Model" dropdown, select "llama3.2" (This is the model we downloaded earlier)
    ![Select Ollama Model](../imgs/ollama/Ollama-Select-Llama32.png)
 
-   > **Compatible Models**: The following Ollama models are available in AutoGPT by default:
+   > **Compatible Models**: The following Ollama models are available in Indra Ai by default:
    > - `llama3.2` (Recommended for most use cases)
    > - `llama3` 
    > - `llama3.1:405b`
@@ -139,15 +139,15 @@ Now that both Ollama and the AutoGPT platform are running, we can use Ollama wit
 
    ![Ollama Remote Host](../imgs/ollama/Ollama-Remote-Host.png)
 
-   > **Important**: Since AutoGPT runs in Docker containers, you must use your host machine's IP address instead of `localhost` or `127.0.0.1`. Docker containers cannot reach `localhost` on the host machine.
+   > **Important**: Since Indra Ai runs in Docker containers, you must use your host machine's IP address instead of `localhost` or `127.0.0.1`. Docker containers cannot reach `localhost` on the host machine.
 
 5. Add prompts to your AI block, save the graph, and run it:
    ![Add Prompt](../imgs/ollama/Ollama-Add-Prompts.png)
 
-That's it! You've successfully setup the AutoGPT platform and made a LLM call to Ollama.
+That's it! You've successfully setup the Indra Ai platform and made a LLM call to Ollama.
 ![Ollama Output](../imgs/ollama/Ollama-Output.png)
 
-### Using Ollama on a Remote Server with AutoGPT
+### Using Ollama on a Remote Server with Indra Ai
 
 For running Ollama on a remote server, simply make sure the Ollama server is running and is accessible from other devices on your network/remotely through the port 11434. 
 
@@ -237,7 +237,7 @@ If you encounter any issues, verify that:
 #### Connection Refused / Cannot Connect to Ollama
 - **Most common cause**: Using `localhost` or `127.0.0.1` in the Ollama Host field
 - **Solution**: Use your host machine's IP address (e.g., `192.168.0.39:11434`)
-- **Why**: AutoGPT runs in Docker containers and cannot reach `localhost` on the host
+- **Why**: Indra Ai runs in Docker containers and cannot reach `localhost` on the host
 - **Find your IP**: Use `ipconfig` (Windows) or `ifconfig` (Linux/macOS)
 - **Test Ollama is running**: `curl http://localhost:11434/api/tags` should work from your host machine
 

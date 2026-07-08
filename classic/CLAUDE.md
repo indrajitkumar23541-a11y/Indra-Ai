@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AutoGPT Classic is an experimental, **unsupported** project demonstrating autonomous GPT-4 operation. Dependencies will not be updated, and the codebase contains known vulnerabilities. This is preserved for educational/historical purposes.
+Indra Ai Classic is an experimental, **unsupported** project demonstrating autonomous GPT-4 operation. Dependencies will not be updated, and the codebase contains known vulnerabilities. This is preserved for educational/historical purposes.
 
 ## Repository Structure
 
@@ -15,7 +15,7 @@ classic/
 ├── forge/
 │   └── forge/              # Core agent framework package
 ├── original_autogpt/
-│   └── autogpt/            # AutoGPT agent package
+│   └── autogpt/            # Indra Ai agent package
 ├── direct_benchmark/
 │   └── direct_benchmark/   # Benchmark harness package
 └── benchmark/              # Challenge definitions (data, not code)
@@ -68,7 +68,7 @@ poetry run direct-benchmark --help
 ```bash
 poetry run pytest                              # All tests
 poetry run pytest forge/tests/                 # Forge tests only
-poetry run pytest original_autogpt/tests/      # AutoGPT tests only
+poetry run pytest original_autogpt/tests/      # Indra Ai tests only
 poetry run pytest -k test_name                 # Single test by name
 poetry run pytest path/to/test.py              # Specific test file
 poetry run pytest --cov                        # With coverage
@@ -104,7 +104,7 @@ The `forge` package is the foundation that other components depend on:
 - `forge/file_storage/` - File system abstraction
 - `forge/config/` - Configuration management
 
-### Original AutoGPT
+### Original Indra Ai
 - `original_autogpt/autogpt/app/` - CLI application entry points
 - `original_autogpt/autogpt/agents/` - Agent implementations
 - `original_autogpt/autogpt/agent_factory/` - Agent creation logic

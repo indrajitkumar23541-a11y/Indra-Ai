@@ -1,35 +1,35 @@
-# Using Google Gemini with AutoGPT
+# Using Google Gemini with Indra Ai
 
-This guide covers integrating Google Gemini models with AutoGPT using OpenRouter.
+This guide covers integrating Google Gemini models with Indra Ai using OpenRouter.
 
 ---
 
 ## Prerequisites
 
-1. Make sure you have completed the [AutoGPT Setup Guide](https://docs.agpt.co/platform/getting-started/) and have AutoGPT running locally at `http://localhost:3000`.
+1. Make sure you have completed the [Indra Ai Setup Guide](https://docs.agpt.co/platform/getting-started/) and have Indra Ai running locally at `http://localhost:3000`.
 2. You have an **OpenRouter API key** from [OpenRouter](https://openrouter.ai/keys).
 
 ---
 
 ## Getting Your API Key
 
-AutoGPT routes all Gemini models through OpenRouter. You need an OpenRouter API key:
+Indra Ai routes all Gemini models through OpenRouter. You need an OpenRouter API key:
 
 1. Visit [OpenRouter Keys](https://openrouter.ai/keys)
 2. Sign in or create an account
 3. Click **"Create Key"**
-4. Copy the generated key for use in AutoGPT
+4. Copy the generated key for use in Indra Ai
 
 ---
 
 ## Setup Steps
 
-### 1. Start AutoGPT Locally
+### 1. Start Indra Ai Locally
 
 Follow the official guide:
-[AutoGPT Getting Started Guide](https://docs.agpt.co/platform/getting-started/)
+[Indra Ai Getting Started Guide](https://docs.agpt.co/platform/getting-started/)
 
-Ensure AutoGPT is running and accessible at:
+Ensure Indra Ai is running and accessible at:
 [http://localhost:3000](http://localhost:3000)
 
 ### 2. Open the Visual Builder
@@ -72,7 +72,7 @@ Inside the **AI Text Generator** block:
 Get your API key from:
 [https://openrouter.ai/keys](https://openrouter.ai/keys)
 
-> Save your API key as a credential in AutoGPT for easy reuse across multiple blocks.
+> Save your API key as a credential in Indra Ai for easy reuse across multiple blocks.
 
 ### 6. Save Your Agent
 
@@ -158,8 +158,8 @@ Pricing varies by model tier and usage volume.
 - [Gemini API Quickstart](https://ai.google.dev/gemini-api/docs/quickstart)
 - [Model Capabilities](https://ai.google.dev/gemini-api/docs/models)
 - [OpenRouter Documentation](https://openrouter.ai/docs)
-- [AutoGPT Platform Docs](https://docs.agpt.co/platform/)
+- [Indra Ai Docs](https://docs.agpt.co/platform/)
 
 ---
 
-You are now set up to use Google Gemini models in AutoGPT.
+You are now set up to use Google Gemini models in Indra Ai.

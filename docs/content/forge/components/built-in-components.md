@@ -1,6 +1,6 @@
 # Built-in Components
 
-This page lists all [🧩 Components](./components.md) and [⚙️ Protocols](./protocols.md) they implement that are natively provided. They are used by the AutoGPT agent.
+This page lists all [🧩 Components](./components.md) and [⚙️ Protocols](./protocols.md) they implement that are natively provided. They are used by the Indra Ai agent.
 Some components have additional configuration options listed in the table, see [Component configuration](./components.md/#component-configuration) to learn more.
 
 !!! note
@@ -133,7 +133,7 @@ Link to the appropriate settings page: [Hugging Face > Settings > Tokens](https:
 
 ### Stable Diffusion WebUI
 
-It is possible to use your own self-hosted Stable Diffusion WebUI with AutoGPT. ### Make sure you are running WebUI with `--api` enabled.
+It is possible to use your own self-hosted Stable Diffusion WebUI with Indra Ai. ### Make sure you are running WebUI with `--api` enabled.
 
 ### `ImageGeneratorConfiguration`
 

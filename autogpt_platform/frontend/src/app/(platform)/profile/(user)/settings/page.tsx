@@ -40,7 +40,7 @@ export default function SettingsPage() {
   useTimezoneDetection(!!user ? timezone : undefined);
 
   useEffect(() => {
-    document.title = "Settings – AutoGPT Platform";
+    document.title = "Settings – Indra Ai";
   }, []);
 
   if (preferencesError) {

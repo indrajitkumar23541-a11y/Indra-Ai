@@ -28,7 +28,7 @@ function sampleSnapshot(): DreamOperationsSnapshot {
       },
       {
         edge_uuid: "edge-prop-bbbbbbbbbbbbbbbbbb",
-        content: "Possibly working at AutoGPT.",
+        content: "Possibly working at Indra Ai.",
         confidence: null,
         status: "tentative",
       },

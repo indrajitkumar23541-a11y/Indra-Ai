@@ -54,7 +54,7 @@ export default function SettingsBillingPage() {
   }
 
   useEffect(function setBillingDocumentTitle() {
-    document.title = "Billing – AutoGPT Platform";
+    document.title = "Billing – Indra Ai";
   }, []);
 
   useEffect(

@@ -81,7 +81,7 @@ class SensitiveConfig(BaseModel):
 ### JSON configuration
 
 You can specify a JSON file (e.g. `config.json`) to use for the configuration when launching an agent.
-This file contains settings for individual [Components](../components/introduction.md) that AutoGPT uses.
+This file contains settings for individual [Components](../components/introduction.md) that Indra Ai uses.
 To specify the file use `--component-config-file` CLI option, for example to use `config.json`:
 
 ```shell
@@ -89,7 +89,7 @@ To specify the file use `--component-config-file` CLI option, for example to use
 ```
 
 !!! note
-    If you're using Docker to run AutoGPT, you need to mount or copy the configuration file to the container.
+    If you're using Docker to run Indra Ai, you need to mount or copy the configuration file to the container.
     See [Docker Guide](../../classic/setup/docker.md) for more information.
 
 ### Example JSON configuration
@@ -109,8 +109,8 @@ You can set sensitive variables in the `.json` file as well but it's recommended
         "docker_container_name": "agent_sandbox"
     },
     "FileManagerConfiguration": {
-        "storage_path": "agents/AutoGPT/",
-        "workspace_path": "agents/AutoGPT/workspace"
+        "storage_path": "agents/Indra Ai/",
+        "workspace_path": "agents/Indra Ai/workspace"
     },
     "GitOperationsConfiguration": {
         "github_username": null

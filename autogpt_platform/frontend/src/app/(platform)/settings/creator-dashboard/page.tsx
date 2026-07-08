@@ -15,7 +15,7 @@ import { useCreatorDashboardPage } from "./useCreatorDashboardPage";
 
 export default function SettingsCreatorDashboardPage() {
   useEffect(() => {
-    document.title = "Creator dashboard – AutoGPT Platform";
+    document.title = "Creator dashboard – Indra Ai";
   }, []);
 
   const {

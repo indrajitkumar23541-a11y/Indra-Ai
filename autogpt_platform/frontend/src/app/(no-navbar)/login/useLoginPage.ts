@@ -87,7 +87,7 @@ export function useLoginPage() {
 
     if (data.email.includes("@agpt.co")) {
       toast({
-        title: "Please use Google SSO to login using an AutoGPT email.",
+        title: "Please use Google SSO to login using an Indra Ai email.",
         variant: "default",
       });
 

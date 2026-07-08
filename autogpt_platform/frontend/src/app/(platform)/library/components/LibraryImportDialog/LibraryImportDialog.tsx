@@ -50,14 +50,14 @@ export default function LibraryImportDialog() {
       <Dialog.Content>
         <TabsLine defaultValue="agent">
           <TabsLineList>
-            <TabsLineTrigger value="agent">AutoGPT agent</TabsLineTrigger>
+            <TabsLineTrigger value="agent">Indra Ai agent</TabsLineTrigger>
             <TabsLineTrigger value="platform">Another platform</TabsLineTrigger>
           </TabsLineList>
 
           {/* Tab: Import from any platform (file upload + n8n URL) */}
           <ExternalWorkflowTab importWorkflow={importWorkflow} />
 
-          {/* Tab: Upload AutoGPT agent JSON */}
+          {/* Tab: Upload Indra Ai agent JSON */}
           <AgentUploadTab upload={upload} />
         </TabsLine>
       </Dialog.Content>

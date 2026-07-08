@@ -26,7 +26,7 @@ export async function generateMetadata({
   );
 
   return {
-    title: `${(creator as CreatorDetails).name} - AutoGPT Store`,
+    title: `${(creator as CreatorDetails).name} - Indra Ai Store`,
     description: (creator as CreatorDetails).description,
   };
 }

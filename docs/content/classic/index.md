@@ -1,40 +1,40 @@
-# AutoGPT Agent
+# Indra Ai Agent
 
 [🔧 **Setup**](setup/index.md)
 &ensp;|&ensp;
 [💻 **User guide**](./usage.md)
 &ensp;|&ensp;
-[🐙 **GitHub**](https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpt)
+[🐙 **GitHub**](https://github.com/Significant-Gravitas/Indra Ai/tree/master/autogpt)
 
 **Location:** `classic/original_autogpt/` in the GitHub repo
 
-**Maintance Notice:** AutoGPT Classic is not supported from a security perspective. 
+**Maintance Notice:** Indra Ai Classic is not supported from a security perspective. 
 Dependencies will not be updated, nor will issues be fixed. If someone wishes to
 contribute to novel development, we will give best effort merging to the changes that
 pass the existing CI.
 
-AutoGPT Classic was conceived when OpenAI published their GPT-4 model accompanied by a paper
+Indra Ai Classic was conceived when OpenAI published their GPT-4 model accompanied by a paper
 outlining the advanced reasoning and task-solving abilities of the model. The concept
 was (and still is) fairly simple: let an LLM decide what to do over and over, while
 feeding the results of its actions back into the prompt. This allows the program to
 iteratively and incrementally work towards its objective.
 
 The fact that this program is able to execute actions on behalf of its user makes
-it an **agent**. In the case of AutoGPT Classic, the user still has to authorize every action,
+it an **agent**. In the case of Indra Ai Classic, the user still has to authorize every action,
 but as the project progresses we'll be able to give the agent more autonomy and only
 require consent for select actions.
 
-AutoGPT Classic is a **generalist agent**, meaning it is not designed with a specific task in
+Indra Ai Classic is a **generalist agent**, meaning it is not designed with a specific task in
 mind. Instead, it is designed to be able to execute a wide range of tasks across many
 disciplines, as long as it can be done on a computer.
 
-# AutoGPT Classic Documentation
+# Indra Ai Classic Documentation
 
-Welcome to the AutoGPT Classic Documentation.
+Welcome to the Indra Ai Classic Documentation.
 
-The AutoGPT Classic project consists of four main components:
+The Indra Ai Classic project consists of four main components:
 
-- The [Agent](#agent) &ndash; also known as just "AutoGPT Classic"
+- The [Agent](#agent) &ndash; also known as just "Indra Ai Classic"
 - The [Benchmark](#benchmark) &ndash; AKA `agbenchmark`
 - The [Forge](#forge)
 - The [Frontend](#frontend)
@@ -43,13 +43,13 @@ To tie these together, we also have a [CLI] at the root of the project.
 
 ## 🤖 Agent
 
-**[📖 About AutoGPT Classic](#autogpt-agent)**
+**[📖 About Indra Ai Classic](#autogpt-agent)**
 &ensp;|&ensp;
 **[🔧 Setup](setup/index.md)**
 &ensp;|&ensp;
 **[💻 Usage](./usage.md)**
 
-The former heart of AutoGPT, and the project that kicked it all off: a semi-autonomous agent powered by LLMs to execute any task for you*.
+The former heart of Indra Ai, and the project that kicked it all off: a semi-autonomous agent powered by LLMs to execute any task for you*.
 
 We continue to develop this project with the goal of providing access to AI assistance to the masses, and building the future transparently and together.
 
@@ -57,7 +57,7 @@ We continue to develop this project with the goal of providing access to AI assi
 
 - 🚀 **Build with us** - We welcome any input, whether it's code or ideas for new features or improvements! Join us on [Discord](https://discord.gg/autogpt) and find out how you can join in on the action.
 
-If you'd like to see what's next, check out the [AutoGPT Platform](../index.md).
+If you'd like to see what's next, check out the [Indra Ai](../index.md).
 
 <small>* it isn't quite there yet, but that is the ultimate goal that we are still pursuing</small>
 
@@ -65,15 +65,15 @@ If you'd like to see what's next, check out the [AutoGPT Platform](../index.md).
 
 ## 🎯 Benchmark
 
-**[🗒️ Readme](https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/benchmark/README.md)**
+**[🗒️ Readme](https://github.com/Significant-Gravitas/Indra Ai/blob/master/classic/benchmark/README.md)**
 
-Measure your agent's performance! The `agbenchmark` can be used with any agent that supports the agent protocol, and the integration with the project's [CLI] makes it even easier to use with AutoGPT Classic and forge-based agents. The benchmark offers a stringent testing environment. Our framework allows for autonomous, objective performance evaluations, ensuring your agents are primed for real-world action.
+Measure your agent's performance! The `agbenchmark` can be used with any agent that supports the agent protocol, and the integration with the project's [CLI] makes it even easier to use with Indra Ai Classic and forge-based agents. The benchmark offers a stringent testing environment. Our framework allows for autonomous, objective performance evaluations, ensuring your agents are primed for real-world action.
 
 <!-- TODO: insert visual demonstrating the benchmark -->
 
 - 📦 [**`agbenchmark`**](https://pypi.org/project/agbenchmark/) on Pypi
 
-- 🔌 **Agent Protocol Standardization** - AutoGPT Classic uses the agent protocol from the AI Engineer Foundation to ensure compatibility with many agents, both from within and outside the project.
+- 🔌 **Agent Protocol Standardization** - Indra Ai Classic uses the agent protocol from the AI Engineer Foundation to ensure compatibility with many agents, both from within and outside the project.
 
 ---
 
@@ -81,7 +81,7 @@ Measure your agent's performance! The `agbenchmark` can be used with any agent t
 
 **[📖 Introduction](../forge/get-started.md)**
 &ensp;|&ensp;
-**[🚀 Quickstart](https://github.com/Significant-Gravitas/AutoGPT/blob/master/QUICKSTART.md)**
+**[🚀 Quickstart](https://github.com/Significant-Gravitas/Indra Ai/blob/master/QUICKSTART.md)**
 
 <!-- TODO: have the guides all in one place -->
 
@@ -93,7 +93,7 @@ Forge your own agent! The Forge is a ready-to-go template for your agent applica
 
 ## 💻 Frontend
 
-**[🗒️ Readme](https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/frontend/README.md)**
+**[🗒️ Readme](https://github.com/Significant-Gravitas/Indra Ai/blob/master/classic/frontend/README.md)**
 
 An easy-to-use and open source frontend for any Agent Protocol-compliant agent.
 
@@ -106,7 +106,7 @@ An easy-to-use and open source frontend for any Agent Protocol-compliant agent.
 ## 🔧 CLI
 [CLI]: #cli
 
-The project CLI makes it easy to use all of the components of AutoGPT Classic in the repo, separately or
+The project CLI makes it easy to use all of the components of Indra Ai Classic in the repo, separately or
 together. To install its dependencies, simply run `./run setup`, and you're ready to go!
 
 ```shell
@@ -124,13 +124,13 @@ Commands:
 
 Common commands:
 
-* `./run agent start autogpt` &ndash; [runs](./usage.md#serve-agent-protocol-mode-with-ui) the AutoGPT Classic agent
+* `./run agent start autogpt` &ndash; [runs](./usage.md#serve-agent-protocol-mode-with-ui) the Indra Ai Classic agent
 * `./run agent create <name>` &ndash; creates a new Forge-based agent project at `agents/<name>`
 * `./run benchmark start <agent>` &ndash; benchmarks the specified agent
 
 ---
 
-🤔 Join the AutoGPT Discord server for any queries:
+🤔 Join the Indra Ai Discord server for any queries:
 [discord.gg/autogpt](https://discord.gg/autogpt)
 
 ### Glossary of Terms
@@ -138,7 +138,7 @@ Common commands:
 - **Repository**: Space where your project resides.
 - **Forking**: Copying a repository under your account.
 - **Cloning**: Making a local copy of a repository.
-- **Agent**: The AutoGPT you'll create and develop.
+- **Agent**: The Indra Ai you'll create and develop.
 - **Benchmarking**: Testing your agent's skills in the Forge.
-- **Forge**: The template for building your AutoGPT agent.
+- **Forge**: The template for building your Indra Ai agent.
 - **Frontend**: The UI for tasks, logs, and task history.

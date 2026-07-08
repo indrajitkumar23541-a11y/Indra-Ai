@@ -29,7 +29,7 @@ export default function UserIntegrationsPage() {
   const { toast } = useToast();
 
   useEffect(() => {
-    document.title = "Integrations – AutoGPT Platform";
+    document.title = "Integrations – Indra Ai";
   }, []);
 
   const [confirmationDialogState, setConfirmationDialogState] = useState<
@@ -72,8 +72,8 @@ export default function UserIntegrationsPage() {
           });
         } else {
           toast({
-            title: "Credentials deleted from AutoGPT",
-            description: `You may also manually remove the connection to AutoGPT at ${provider}!`,
+            title: "Credentials deleted from Indra Ai",
+            description: `You may also manually remove the connection to Indra Ai at ${provider}!`,
             duration: 3000,
           });
         }

@@ -15,7 +15,7 @@ test("auth happy path: user can sign up with a fresh account", async ({
 
   await signupTestUser(page, undefined, undefined, false);
   await expect(page).toHaveURL(/\/onboarding/);
-  await expect(page.getByText("Welcome to AutoGPT")).toBeVisible();
+  await expect(page.getByText("Welcome to Indra Ai")).toBeVisible();
 });
 
 test("auth happy path: user can sign up, enter the app, and log out", async ({
@@ -25,7 +25,7 @@ test("auth happy path: user can sign up, enter the app, and log out", async ({
 
   await signupTestUser(page, undefined, undefined, false);
   await expect(page).toHaveURL(/\/onboarding/);
-  await expect(page.getByText("Welcome to AutoGPT")).toBeVisible();
+  await expect(page.getByText("Welcome to Indra Ai")).toBeVisible();
 
   await skipOnboardingIfPresent(page, "/marketplace");
   await expect(page).toHaveURL(/\/marketplace/);

@@ -1,6 +1,6 @@
-# AutoGPT Platform External API Guide
+# Indra Ai External API Guide
 
-The AutoGPT Platform provides an External API that allows you to programmatically interact with agents, blocks, the store, and more.
+The Indra Ai provides an External API that allows you to programmatically interact with agents, blocks, the store, and more.
 
 ## API Documentation
 
@@ -16,7 +16,7 @@ The External API supports two authentication methods:
 
 ### 1. API Keys
 
-API keys are the simplest way to authenticate. Generate an API key from your AutoGPT Platform account settings and include it in your requests:
+API keys are the simplest way to authenticate. Generate an API key from your Indra Ai account settings and include it in your requests:
 
 ```http
 GET /external-api/v1/blocks
@@ -30,11 +30,11 @@ API keys are ideal for:
 
 ### 2. OAuth 2.0 (Single Sign-On)
 
-For applications that need to act on behalf of users, use OAuth 2.0. This allows users to authorize your application to access their AutoGPT resources.
+For applications that need to act on behalf of users, use OAuth 2.0. This allows users to authorize your application to access their Indra Ai resources.
 
 OAuth is ideal for:
 - Third-party applications
-- "Sign in with AutoGPT" (SSO, Single Sign-On) functionality
+- "Sign in with Indra Ai" (SSO, Single Sign-On) functionality
 - Applications that need user-specific permissions
 
 See the [SSO Integration Guide](sso-guide.md) for complete OAuth implementation details.
@@ -81,5 +81,5 @@ curl -H "Authorization: Bearer agpt_xt_..." \
 
 For issues or questions about API integration:
 
-- Open an issue on [GitHub](https://github.com/Significant-Gravitas/AutoGPT)
+- Open an issue on [GitHub](https://github.com/Significant-Gravitas/Indra Ai)
 - Check the [Swagger documentation](https://backend.agpt.co/external-api/docs)

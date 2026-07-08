@@ -24,7 +24,7 @@ export const COOKIE_CATEGORIES = {
   analytics: {
     name: "Analytics & Performance",
     description:
-      "Help us understand how you use AutoGPT to improve our service (Google Analytics, Vercel Analytics, Datafa.st)",
+      "Help us understand how you use Indra Ai to improve our service (Google Analytics, Vercel Analytics, Datafa.st)",
     alwaysActive: false,
   },
   monitoring: {

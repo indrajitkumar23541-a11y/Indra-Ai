@@ -1,13 +1,13 @@
-# AutoGPT Platform Installer
+# Indra Ai Installer
 
-The AutoGPT Platform provides easy-to-use installers to help you quickly set up the platform on your system. This page covers how to use the installer scripts for both Linux/macOS and Windows.
+The Indra Ai provides easy-to-use installers to help you quickly set up the platform on your system. This page covers how to use the installer scripts for both Linux/macOS and Windows.
 
 ## What the Installer Does
 
 The installer scripts will:
 
 1. Check for required prerequisites (Git, Docker, npm)
-2. Clone the AutoGPT repository
+2. Clone the Indra Ai repository
 3. Set up the backend services using Docker
 4. Set up the frontend application
 5. Start both the backend and frontend services
@@ -22,7 +22,7 @@ Before running the installer, make sure you have the following installed:
 
 ## Quick One-Liner Installation
 
-For convenience, you can use the following one-liner commands to install AutoGPT Platform:
+For convenience, you can use the following one-liner commands to install Indra Ai:
 
 ### Linux/macOS
 
@@ -94,7 +94,7 @@ Once the installation is complete:
 To stop the services, press Ctrl+C in the terminal where the frontend is running, then run:
 
 ```bash
-cd AutoGPT/autogpt_platform
+cd Indra Ai/autogpt_platform
 docker compose down
 ```
 

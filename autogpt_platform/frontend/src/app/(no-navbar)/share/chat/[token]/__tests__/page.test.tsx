@@ -203,7 +203,7 @@ describe("SharedChatPage", () => {
 
     await screen.findByText(/share link not found/i);
     // Logo image always present in ShareHeader.
-    expect(screen.getAllByAltText("AutoGPT").length).toBeGreaterThan(0);
+    expect(screen.getAllByAltText("Indra Ai").length).toBeGreaterThan(0);
     // Copy-link CTA wired through ShareActions in the chrome.
     expect(screen.getByRole("button", { name: /copy link/i })).toBeDefined();
   });

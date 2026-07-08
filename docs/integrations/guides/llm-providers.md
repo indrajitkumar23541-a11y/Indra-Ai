@@ -1,6 +1,6 @@
 # LLM Providers
 
-There are several providers that AutoGPT users can use for running inference with LLM models.
+There are several providers that Indra Ai users can use for running inference with LLM models.
 
 ## Llama API
 

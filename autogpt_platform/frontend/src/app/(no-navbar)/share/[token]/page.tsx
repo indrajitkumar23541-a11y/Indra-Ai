@@ -93,7 +93,7 @@ export default function SharePage() {
               </CardContent>
             </Card>
             <div className="mt-8 text-center text-xs text-muted-foreground">
-              <p>Powered by AutoGPT Platform</p>
+              <p>Powered by Indra Ai</p>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function SharePage() {
         </Card>
 
         <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>Powered by AutoGPT Platform</p>
+          <p>Powered by Indra Ai</p>
         </div>
       </div>
     </ExecutionShareChrome>

@@ -44,7 +44,7 @@ const expectedItems = [
   { label: "Account", href: "/settings/account" },
   { label: "Billing", href: "/settings/billing" },
   { label: "Integrations", href: "/settings/integrations" },
-  { label: "AutoGPT API Keys", href: "/settings/api-keys" },
+  { label: "Indra Ai API Keys", href: "/settings/api-keys" },
   { label: "Creator Dashboard", href: "/settings/creator-dashboard" },
 ];
 

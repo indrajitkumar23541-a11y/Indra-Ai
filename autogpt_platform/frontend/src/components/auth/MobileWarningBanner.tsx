@@ -18,7 +18,7 @@ export function MobileWarningBanner() {
         <DeviceMobile className="mt-0.5 h-5 w-5 flex-shrink-0 text-amber-600" />
         <div className="flex flex-col gap-1">
           <Text variant="body-medium" className="text-amber-900">
-            Heads up: AutoGPT works best on desktop
+            Heads up: Indra Ai works best on desktop
           </Text>
           <Text variant="small" className="text-amber-800">
             Some features may be limited on mobile. For the best experience,

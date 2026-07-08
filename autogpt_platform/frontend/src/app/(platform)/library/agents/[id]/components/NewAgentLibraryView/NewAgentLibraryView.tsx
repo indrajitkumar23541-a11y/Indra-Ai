@@ -67,7 +67,7 @@ export function NewAgentLibraryView() {
 
   useEffect(() => {
     if (agent) {
-      document.title = `${agent.name} - Library - AutoGPT Platform`;
+      document.title = `${agent.name} - Library - Indra Ai`;
     }
   }, [agent]);
 

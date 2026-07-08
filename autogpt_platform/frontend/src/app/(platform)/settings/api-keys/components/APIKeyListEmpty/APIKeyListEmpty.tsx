@@ -14,7 +14,7 @@ export function APIKeyListEmpty() {
         </Text>
         <Text variant="body" className="max-w-[360px] text-zinc-500">
           You haven&apos;t created an API key yet. Create one to start using the
-          AutoGPT Platform API.
+          Indra Ai API.
         </Text>
       </div>
     </div>

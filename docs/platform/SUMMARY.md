@@ -1,11 +1,11 @@
 # Table of contents
 
-* [What is the AutoGPT Platform?](what-is-autogpt-platform.md)
+* [What is the Indra Ai?](what-is-autogpt-platform.md)
 
 ## Getting Started
 
 * [Setting Up Auto-GPT (Local Host)](getting-started.md)
-* [AutoGPT Platform Installer](installer.md)
+* [Indra Ai Installer](installer.md)
 * [Edit an Agent](edit-agent.md)
 * [Delete an Agent](delete-agent.md)
 * [Download & Import an Agent](download-agent-from-marketplace-local.md)

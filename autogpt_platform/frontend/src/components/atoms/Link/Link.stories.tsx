@@ -82,7 +82,7 @@ export const Internal: Story = {
 // External link
 export const External: Story = {
   args: {
-    href: "https://github.com/Significant-Gravitas/AutoGPT",
+    href: "https://github.com/Significant-Gravitas/Indra Ai",
     children: "View on GitHub",
     isExternal: true,
   },

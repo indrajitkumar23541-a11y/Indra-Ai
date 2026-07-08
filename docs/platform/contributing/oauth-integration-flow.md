@@ -2,7 +2,7 @@
 
 ## Overview
 
-The AutoGPT platform implements OAuth 2.0 in two distinct contexts:
+The Indra Ai platform implements OAuth 2.0 in two distinct contexts:
 
 1. **User Authentication (SSO)**: Handled by Supabase for platform login
 2. **API Integration Credentials**: Custom OAuth implementation for third-party service access
@@ -324,7 +324,7 @@ stateDiagram-v2
 
 ### User Authentication (SSO) via Supabase
 
-- **Purpose**: Authenticate users to access the AutoGPT platform
+- **Purpose**: Authenticate users to access the Indra Ai platform
 - **Provider**: Supabase Auth (currently supports Google SSO)
 - **Flow Path**: `/login` → Supabase OAuth → `/auth/callback`
 - **Session Storage**: Supabase-managed cookies
@@ -333,7 +333,7 @@ stateDiagram-v2
 
 ### API Integration Credentials
 
-- **Purpose**: Grant AutoGPT access to user's third-party services
+- **Purpose**: Grant Indra Ai access to user's third-party services
 - **Providers**: Examples include GitHub, Google APIs, Notion, and others
   - Full list in `/backend/backend/integrations/providers.py`
   - OAuth handlers in `/backend/backend/integrations/oauth/`

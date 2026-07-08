@@ -37,12 +37,12 @@ export const useAPISection = () => {
 
       toast({
         title: "Success",
-        description: "AutoGPT Platform API key revoked successfully",
+        description: "Indra Ai API key revoked successfully",
       });
     } catch {
       toast({
         title: "Error",
-        description: "Failed to revoke AutoGPT Platform API key",
+        description: "Failed to revoke Indra Ai API key",
         variant: "destructive",
       });
     }

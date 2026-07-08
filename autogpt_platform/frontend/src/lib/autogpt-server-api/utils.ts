@@ -58,7 +58,7 @@ function removeCredentials(obj: any): void {
 }
 
 /** ⚠️ Remove after 2025-10-01 (one year after implementation in
- * [#8229](https://github.com/Significant-Gravitas/AutoGPT/pull/8229))
+ * [#8229](https://github.com/Significant-Gravitas/Indra Ai/pull/8229))
  */
 function updateBlockIDs(graph: Graph) {
   graph.nodes
@@ -69,7 +69,7 @@ function updateBlockIDs(graph: Graph) {
 }
 
 const updatedBlockIDMap: Record<string, string> = {
-  // https://github.com/Significant-Gravitas/AutoGPT/issues/8223
+  // https://github.com/Significant-Gravitas/Indra Ai/issues/8223
   "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6":
     "436c3984-57fd-4b85-8e9a-459b356883bd",
   "b2g2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6":

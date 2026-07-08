@@ -64,7 +64,7 @@ export const WithLinks: Story = {
         {[
           "Here are some links:\n\n",
           "- Internal link: [Download file](/api/proxy/api/v1/workspace/files/download/abc123)\n",
-          "- External link: [GitHub](https://github.com/Significant-Gravitas/AutoGPT)\n",
+          "- External link: [GitHub](https://github.com/Significant-Gravitas/Indra Ai)\n",
           "- Another external: [Documentation](https://docs.agpt.co)\n\n",
           "Internal links should open directly. External links should show a safety modal.\n\n",
           "**Try clicking each link to verify behavior.**",

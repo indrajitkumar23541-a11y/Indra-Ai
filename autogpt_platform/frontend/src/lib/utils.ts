@@ -155,7 +155,7 @@ export function beautifyString(name: string): string {
 }
 
 const exceptionMap: Record<string, string> = {
-  "Auto GPT": "AutoGPT",
+  "Auto GPT": "Indra Ai",
   Gpt: "GPT",
   Creds: "Credentials",
   Id: "ID",

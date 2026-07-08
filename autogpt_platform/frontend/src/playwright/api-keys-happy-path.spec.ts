@@ -18,7 +18,7 @@ test("api keys happy path: user can create, copy, and revoke an API key", async 
   await expect(page).toHaveURL(/\/profile\/api-keys/);
   await expect(
     page.getByText(
-      "Manage your AutoGPT Platform API keys for programmatic access",
+      "Manage your Indra Ai API keys for programmatic access",
     ),
   ).toBeVisible();
 
@@ -37,7 +37,7 @@ test("api keys happy path: user can create, copy, and revoke an API key", async 
   await page.getByRole("button", { name: "Create" }).click();
 
   const secretDialog = page.getByRole("dialog", {
-    name: "AutoGPT Platform API Key Created",
+    name: "Indra Ai API Key Created",
   });
   await expect
     .poll(
@@ -47,7 +47,7 @@ test("api keys happy path: user can create, copy, and revoke an API key", async 
         }
 
         const creationFailed = await page
-          .getByText("Failed to create AutoGPT Platform API key")
+          .getByText("Failed to create Indra Ai API key")
           .isVisible()
           .catch(() => false);
         if (creationFailed) {
@@ -92,7 +92,7 @@ test("api keys happy path: user can create, copy, and revoke an API key", async 
   await page.getByRole("menuitem", { name: "Revoke" }).click();
 
   await expect(
-    page.getByText("AutoGPT Platform API key revoked successfully"),
+    page.getByText("Indra Ai API key revoked successfully"),
   ).toBeVisible({ timeout: 15000 });
   await expect(
     page.getByTestId("api-key-row").filter({ hasText: keyName }),

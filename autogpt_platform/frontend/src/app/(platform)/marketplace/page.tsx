@@ -13,15 +13,15 @@ export const dynamic = "force-dynamic";
 
 // FIX: Correct metadata
 export const metadata: Metadata = {
-  title: "Marketplace - AutoGPT Platform",
+  title: "Marketplace - Indra Ai",
   description: "Find and use AI Agents created by our community",
-  applicationName: "AutoGPT Marketplace",
-  authors: [{ name: "AutoGPT Team" }],
+  applicationName: "Indra Ai Marketplace",
+  authors: [{ name: "Indra Ai Team" }],
   keywords: [
     "AI agents",
     "automation",
     "artificial intelligence",
-    "AutoGPT",
+    "Indra Ai",
     "marketplace",
   ],
   robots: {
@@ -29,22 +29,22 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Marketplace - AutoGPT Platform",
+    title: "Marketplace - Indra Ai",
     description: "Find and use AI Agents created by our community",
     type: "website",
-    siteName: "AutoGPT Marketplace",
+    siteName: "Indra Ai Marketplace",
     images: [
       {
         url: "/images/store-og.png",
         width: 1200,
         height: 630,
-        alt: "AutoGPT Marketplace",
+        alt: "Indra Ai Marketplace",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marketplace - AutoGPT Platform",
+    title: "Marketplace - Indra Ai",
     description: "Find and use AI Agents created by our community",
     images: ["/images/store-twitter.png"],
   },

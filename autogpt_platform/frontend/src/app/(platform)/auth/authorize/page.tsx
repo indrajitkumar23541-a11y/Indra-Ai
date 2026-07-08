@@ -288,7 +288,7 @@ export default function AuthorizePage() {
 
           {/* Warning */}
           <Text variant="small" className="text-center text-slate-500">
-            By authorizing, you allow this application to access your AutoGPT
+            By authorizing, you allow this application to access your Indra Ai
             account with the permissions listed above.
           </Text>
         </div>

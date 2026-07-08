@@ -4,7 +4,7 @@ import { handleTutorialSkip } from "../helpers";
 export const createWelcomeSteps = (tour: any): StepOptions[] => [
   {
     id: "welcome",
-    title: "Welcome to AutoGPT Builder! 👋🏻",
+    title: "Welcome to Indra Ai Builder! 👋🏻",
     text: `
       <div class="text-sm leading-[1.375rem] text-zinc-800">
         <p class="text-sm font-normal leading-[1.375rem] text-zinc-800 m-0">This interactive tutorial will teach you how to build your first AI agent.</p>

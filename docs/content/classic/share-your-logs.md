@@ -1,4 +1,4 @@
-# Share your logs with us to help improve AutoGPT
+# Share your logs with us to help improve Indra Ai
 
 Do you notice weird behavior with your agent? Do you have an interesting use case? Do you have a bug you want to report?
 Follow the steps below to enable your logs and upload them. You can include these logs when making an issue report or discussing an issue with us.
@@ -23,7 +23,7 @@ You can inspect and share logs via [e2b](https://e2b.dev).
 ![E2b logs dashboard](../imgs/e2b-dashboard.png)
 
 1. Go to [autogpt.e2b.dev](https://autogpt.e2b.dev) and sign in.
-2. You'll see logs from other members of the AutoGPT team that you can inspect.
+2. You'll see logs from other members of the Indra Ai team that you can inspect.
 3. Or you upload your own logs. Click on the "Upload log folder" button and select the debug logs dir that you generated. Wait a 1-2 seconds and the page reloads.
 4. You can share logs via sharing the URL in your browser.
 ![E2b log URL](../imgs/e2b-log-url.png)

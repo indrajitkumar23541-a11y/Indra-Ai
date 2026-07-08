@@ -65,7 +65,7 @@ cd ../backend
 prisma migrate dev --schema postgres/schema.prisma
 ```
 
-## AutoGPT Agent Server Advanced set up
+## Indra Ai Agent Server Advanced set up
 
 This guide walks you through a dockerized set up, with an external DB (postgres)
 

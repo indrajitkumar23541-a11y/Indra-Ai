@@ -19,7 +19,7 @@ import confetti from "canvas-confetti";
 import * as Sentry from "@sentry/nextjs";
 import { cn } from "@/lib/utils";
 
-/** AutoGPT design system purple palette for confetti */
+/** Indra Ai design system purple palette for confetti */
 const AGPT_CONFETTI_COLORS = [
   "#7733f5", // purple-500
   "#925cf7", // purple-400

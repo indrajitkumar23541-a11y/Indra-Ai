@@ -1,10 +1,10 @@
 # Block Creation with SDK
 
-This guide explains how to create new blocks for the AutoGPT Platform using the SDK pattern with advanced features.
+This guide explains how to create new blocks for the Indra Ai using the SDK pattern with advanced features.
 
 ## Overview
 
-Blocks are reusable components that perform specific tasks in AutoGPT workflows. They can integrate with external services, process data, or perform any programmatic operation.
+Blocks are reusable components that perform specific tasks in Indra Ai workflows. They can integrate with external services, process data, or perform any programmatic operation.
 
 ## Basic Structure
 

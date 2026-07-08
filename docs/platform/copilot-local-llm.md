@@ -3,7 +3,7 @@
 > **Important**: This page covers the **AutoPilot chat path** — the
 > conversational agent on `/copilot`. For the *block-layer* AI Text
 > Generator block (used inside agent graphs you build yourself), see
-> [Running Ollama with AutoGPT](ollama.md). The two paths read different
+> [Running Ollama with Indra Ai](ollama.md). The two paths read different
 > env vars, so configuring one does not configure the other.
 >
 > Self-hosting only — the cloud `agpt.co` deployment routes AutoPilot
@@ -24,7 +24,7 @@ equally well:
 | Ollama on a separate LAN box | `http://ollama.lab.local:11434/v1` |
 | Ollama behind an HTTPS reverse proxy on the public internet | `https://ollama.example.com/v1` |
 | [vLLM](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [LocalAI](https://localai.io/), [LM Studio](https://lmstudio.ai/), [LiteLLM proxy](https://docs.litellm.ai/docs/simple_proxy) | their respective `/v1` URLs |
-| A managed OpenAI-compatible API you don't pay AutoGPT for | its `/v1` URL |
+| A managed OpenAI-compatible API you don't pay Indra Ai for | its `/v1` URL |
 
 Anything that speaks the OpenAI `/v1/chat/completions` shape — including
 `tools=[...]` for function calling — will work. The rest of this guide
@@ -160,7 +160,7 @@ new window automatically on the next turn — nothing else to update.
 The endpoint can be on the same machine, on the LAN, or anywhere
 internet-reachable. Pick whichever matches your deployment shape:
 
-### Same host as the AutoGPT containers
+### Same host as the Indra Ai containers
 
 How containers reach the host depends on whether you're on Docker
 Desktop (macOS / Windows) or native Docker (Linux):
@@ -204,7 +204,7 @@ CHAT_BASE_URL=http://gpu-rig.lab.local:11434/v1
 
 On the Ollama box, set `OLLAMA_HOST=0.0.0.0:11434` so it accepts
 non-loopback connections, and either open port 11434 in the firewall
-for your AutoGPT host's IP or put both behind a private VPN /
+for your Indra Ai host's IP or put both behind a private VPN /
 WireGuard mesh.
 
 ### Remote / public-internet endpoint

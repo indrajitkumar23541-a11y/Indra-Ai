@@ -50,7 +50,7 @@ export const useAPIkeysModals = () => {
     } catch {
       toast({
         title: "Error",
-        description: "Failed to create AutoGPT Platform API key",
+        description: "Failed to create Indra Ai API key",
         variant: "destructive",
       });
     }
@@ -60,7 +60,7 @@ export const useAPIkeysModals = () => {
     navigator.clipboard.writeText(keyState.newApiKey);
     toast({
       title: "Copied",
-      description: "AutoGPT Platform API key copied to clipboard",
+      description: "Indra Ai API key copied to clipboard",
     });
   };
 

@@ -43,7 +43,7 @@ function getHeroContent(
       return {
         title: "Agent approved",
         description:
-          "Your agent has been approved and is now live on the AutoGPT marketplace.",
+          "Your agent has been approved and is now live on the Indra Ai marketplace.",
         Icon: CheckIcon,
         ringClass: "bg-emerald-50 ring-emerald-100",
         iconClass: "bg-emerald-500 text-white",

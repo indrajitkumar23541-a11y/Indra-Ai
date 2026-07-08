@@ -38,17 +38,17 @@ export function ReadyView({
           </Text>
           {forUser ? (
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>{contextLabel} will be linked to your AutoGPT account</li>
+              <li>{contextLabel} will be linked to your Indra Ai account</li>
               <li>DMs with the bot run as your personal AutoPilot</li>
               <li>All usage from those DMs is billed to your account</li>
             </ul>
           ) : (
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>{contextLabel} will be connected to your AutoGPT account</li>
+              <li>{contextLabel} will be connected to your Indra Ai account</li>
               <li>Everyone in the server can chat with AutoPilot</li>
               <li>Each person gets their own private conversation</li>
               <li>
-                All usage from the server is billed to your AutoGPT account
+                All usage from the server is billed to your Indra Ai account
               </li>
             </ul>
           )}
@@ -56,7 +56,7 @@ export function ReadyView({
 
         <div className="w-full rounded-xl border border-border bg-muted p-4">
           <Text variant="small" className="text-muted-foreground">
-            Usage from {contextLabel} will be billed to your AutoGPT account.
+            Usage from {contextLabel} will be billed to your Indra Ai account.
             You can unlink at any time from your account settings.
           </Text>
         </div>
@@ -69,7 +69,7 @@ export function ReadyView({
         >
           {forUser
             ? `Connect my ${platform} DMs`
-            : `Connect ${platform} to AutoGPT`}
+            : `Connect ${platform} to Indra Ai`}
         </Button>
 
         {userEmail && (

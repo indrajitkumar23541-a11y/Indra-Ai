@@ -43,7 +43,7 @@ describe("CredentialsFlatView", () => {
           credentials: [
             {
               id: "managed-1",
-              title: "Ayrshare (managed by AutoGPT)",
+              title: "Ayrshare (managed by Indra Ai)",
               type: "api_key",
               provider: "ayrshare",
               is_managed: true,

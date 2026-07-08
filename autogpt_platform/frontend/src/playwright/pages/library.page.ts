@@ -145,8 +145,8 @@ export class LibraryPage extends BasePage {
       timeout: 5_000,
     });
 
-    // Click the "AutoGPT agent" tab
-    await this.page.getByRole("tab", { name: "AutoGPT agent" }).click();
+    // Click the "Indra Ai agent" tab
+    await this.page.getByRole("tab", { name: "Indra Ai agent" }).click();
   }
 
   async closeUploadDialog(): Promise<void> {

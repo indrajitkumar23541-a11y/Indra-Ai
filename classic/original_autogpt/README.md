@@ -1,10 +1,10 @@
-# AutoGPT: An Autonomous GPT-4 Experiment
+# Indra Ai: An Autonomous GPT-4 Experiment
 
 [📖 **Documentation**][docs]
 &ensp;|&ensp;
 [🚀 **Contributing**](../../CONTRIBUTING.md)
 
-AutoGPT is an experimental open-source application showcasing the capabilities of modern Large Language Models. This program, driven by GPT-4, chains together LLM "thoughts", to autonomously achieve whatever goal you set. As one of the first examples of GPT-4 running fully autonomously, AutoGPT pushes the boundaries of what is possible with AI.
+Indra Ai is an experimental open-source application showcasing the capabilities of modern Large Language Models. This program, driven by GPT-4, chains together LLM "thoughts", to autonomously achieve whatever goal you set. As one of the first examples of GPT-4 running fully autonomously, Indra Ai pushes the boundaries of what is possible with AI.
 
 <h2 align="center"> Demo April 16th 2023 </h2>
 
@@ -23,7 +23,7 @@ Demo made by <a href=https://twitter.com/BlakeWerlinger>Blake Werlinger</a>
 - 🔌 Extensibility with Plugins
 <!-- - 💾 Long-term and short-term memory management -->
 
-## Setting up AutoGPT
+## Setting up Indra Ai
 
 ### Prerequisites
 - Python 3.12+
@@ -43,7 +43,7 @@ cp .env.template .env
 
 ### Configuration
 
-AutoGPT uses a **layered configuration system**:
+Indra Ai uses a **layered configuration system**:
 
 #### 1. Environment Variables (`.env`)
 
@@ -86,7 +86,7 @@ Agent-specific permission overrides.
 
 For more configuration options, see the [setup guide][docs/setup].
 
-## Running AutoGPT
+## Running Indra Ai
 The CLI should be self-documenting:
 ```shell
 $ ./autogpt.sh --help
@@ -97,7 +97,7 @@ Options:
 
 Commands:
   run    Sets up and runs an agent, based on the task specified by the...
-  serve  Starts an Agent Protocol compliant AutoGPT server, which creates...
+  serve  Starts an Agent Protocol compliant Indra Ai server, which creates...
 ```
 When run without a sub-command, it will default to `run` for legacy reasons.
 
@@ -106,7 +106,7 @@ When run without a sub-command, it will default to `run` for legacy reasons.
 <code>$ ./autogpt.sh run --help</code>
 </summary>
 
-The `run` sub-command starts AutoGPT with the legacy CLI interface:
+The `run` sub-command starts Indra Ai with the legacy CLI interface:
 
 ```shell
 $ ./autogpt.sh run --help
@@ -152,13 +152,13 @@ Options:
 <code>$ ./autogpt.sh serve --help</code>
 </summary>
 
-The `serve` sub-command starts AutoGPT wrapped in an Agent Protocol server:
+The `serve` sub-command starts Indra Ai wrapped in an Agent Protocol server:
 
 ```shell
 $ ./autogpt.sh serve --help
 Usage: python -m autogpt serve [OPTIONS]
 
-  Starts an Agent Protocol compliant AutoGPT server, which creates a custom
+  Starts an Agent Protocol compliant Indra Ai server, which creates a custom
   agent for every task.
 
 Options:
@@ -197,7 +197,7 @@ Agents operate within a **workspace** - a directory containing all agent data:
 
 ## Permissions
 
-AutoGPT uses a **layered permission system** with pattern matching.
+Indra Ai uses a **layered permission system** with pattern matching.
 
 ### Permission Check Order (First Match Wins)
 
@@ -238,9 +238,9 @@ Denied by default:
 [docs/plugins]: https://docs.agpt.co/classic/original_autogpt/plugins
 
 ## 📚 Resources
-* 📔 AutoGPT [project wiki](https://github.com/Significant-Gravitas/AutoGPT/wiki)
-* 🧮 AutoGPT [project kanban](https://github.com/orgs/Significant-Gravitas/projects/1)
-* 🌃 AutoGPT [roadmap](https://github.com/orgs/Significant-Gravitas/projects/2)
+* 📔 Indra Ai [project wiki](https://github.com/Significant-Gravitas/Indra Ai/wiki)
+* 🧮 Indra Ai [project kanban](https://github.com/orgs/Significant-Gravitas/projects/1)
+* 🌃 Indra Ai [roadmap](https://github.com/orgs/Significant-Gravitas/projects/2)
 
 ## ⚠️ Limitations
 
@@ -252,22 +252,22 @@ This experiment aims to showcase the potential of GPT-4 but comes with some limi
 
 ## 🛡 Disclaimer
 
-This project, AutoGPT, is an experimental application and is provided "as-is" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise.
+This project, Indra Ai, is an experimental application and is provided "as-is" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise.
 
-The developers and contributors of this project do not accept any responsibility or liability for any losses, damages, or other consequences that may occur as a result of using this software. You are solely responsible for any decisions and actions taken based on the information provided by AutoGPT.
+The developers and contributors of this project do not accept any responsibility or liability for any losses, damages, or other consequences that may occur as a result of using this software. You are solely responsible for any decisions and actions taken based on the information provided by Indra Ai.
 
 **Please note that the use of the GPT-4 language model can be expensive due to its token usage.** By utilizing this project, you acknowledge that you are responsible for monitoring and managing your own token usage and the associated costs. It is highly recommended to check your OpenAI API usage regularly and set up any necessary limits or alerts to prevent unexpected charges.
 
-As an autonomous experiment, AutoGPT may generate content or take actions that are not in line with real-world business practices or legal requirements. It is your responsibility to ensure that any actions or decisions made based on the output of this software comply with all applicable laws, regulations, and ethical standards. The developers and contributors of this project shall not be held responsible for any consequences arising from the use of this software.
+As an autonomous experiment, Indra Ai may generate content or take actions that are not in line with real-world business practices or legal requirements. It is your responsibility to ensure that any actions or decisions made based on the output of this software comply with all applicable laws, regulations, and ethical standards. The developers and contributors of this project shall not be held responsible for any consequences arising from the use of this software.
 
-By using AutoGPT, you agree to indemnify, defend, and hold harmless the developers, contributors, and any affiliated parties from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of this software or your violation of these terms.
+By using Indra Ai, you agree to indemnify, defend, and hold harmless the developers, contributors, and any affiliated parties from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of this software or your violation of these terms.
 
 ---
 
-In Q2 of 2023, AutoGPT became the fastest growing open-source project in history. Now that the dust has settled, we're committed to continued sustainable development and growth of the project.
+In Q2 of 2023, Indra Ai became the fastest growing open-source project in history. Now that the dust has settled, we're committed to continued sustainable development and growth of the project.
 
 <p align="center">
-  <a href="https://star-history.com/#Significant-Gravitas/AutoGPT&Date">
-    <img src="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#Significant-Gravitas/Indra Ai&Date">
+    <img src="https://api.star-history.com/svg?repos=Significant-Gravitas/Indra Ai&type=Date" alt="Star History Chart">
   </a>
 </p>

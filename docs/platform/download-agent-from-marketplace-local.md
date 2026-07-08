@@ -1,12 +1,12 @@
-# **How to Download and Import an Agent from the AutoGPT Marketplace (Local Hosting)**
+# **How to Download and Import an Agent from the Indra Ai Marketplace (Local Hosting)**
 
 ## **Overview**
-This guide explains how to download an agent from the AutoGPT marketplace and import it into your locally hosted instance.
+This guide explains how to download an agent from the Indra Ai marketplace and import it into your locally hosted instance.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/eTg2kbJdBIw?si=v1npcr8HDiInvUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
 ## **Prerequisites**
-* A local installation of AutoGPT
+* A local installation of Indra Ai
 * Access to the marketplace for local hosters
 
 ## **Step-by-Step Process**

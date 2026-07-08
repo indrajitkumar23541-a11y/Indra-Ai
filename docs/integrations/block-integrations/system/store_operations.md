@@ -1,6 +1,6 @@
 # System Store Operations
 <!-- MANUAL: file_description -->
-Blocks for browsing and retrieving agent details from the AutoGPT store.
+Blocks for browsing and retrieving agent details from the Indra Ai store.
 <!-- END MANUAL -->
 
 ## Get Store Agent Details
@@ -10,7 +10,7 @@ Get detailed information about an agent from the store
 
 ### How it works
 <!-- MANUAL: how_it_works -->
-This block retrieves detailed metadata about a specific agent from the AutoGPT store using the creator's username and agent slug. It returns the agent's name, description, categories, run count, and average rating.
+This block retrieves detailed metadata about a specific agent from the Indra Ai store using the creator's username and agent slug. It returns the agent's name, description, categories, run count, and average rating.
 
 The store_listing_version_id can be used with other blocks to add the agent to your library or execute it.
 <!-- END MANUAL -->
@@ -54,7 +54,7 @@ Search for agents in the store
 
 ### How it works
 <!-- MANUAL: how_it_works -->
-This block searches the AutoGPT agent store using a query string. Filter results by category and sort by rating, runs, name, or recency (`updated_at`). Limit controls the maximum number of results returned.
+This block searches the Indra Ai agent store using a query string. Filter results by category and sort by rating, runs, name, or recency (`updated_at`). Limit controls the maximum number of results returned.
 
 Results include basic agent information and are output both as a list and individually for workflow iteration.
 <!-- END MANUAL -->

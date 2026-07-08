@@ -13,8 +13,8 @@ We welcome contributions to our documentation! Our docs are hosted on GitBook an
 1. Clone the repository and switch to the gitbook branch:
 
     ```shell
-    git clone https://github.com/Significant-Gravitas/AutoGPT.git
-    cd AutoGPT
+    git clone https://github.com/Significant-Gravitas/Indra Ai.git
+    cd Indra Ai
     git checkout gitbook
     ```
 

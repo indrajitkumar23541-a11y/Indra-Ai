@@ -1,4 +1,4 @@
-This is the frontend for AutoGPT's next generation
+This is the frontend for Indra Ai's next generation
 
 ## 🧢 Getting Started
 

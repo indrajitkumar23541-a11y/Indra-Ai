@@ -58,7 +58,7 @@ describe("formatNotificationTitle", () => {
 describe("COPILOT_COMPLETION_NOTIFICATION", () => {
   it("matches the copy hardcoded in public/push-sw.js", () => {
     expect(COPILOT_COMPLETION_NOTIFICATION).toEqual({
-      title: "AutoGPT",
+      title: "Indra Ai",
       body: "Task completed",
       icon: "/notification-icon-192.png",
     });

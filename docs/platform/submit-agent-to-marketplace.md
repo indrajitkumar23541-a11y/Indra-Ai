@@ -1,9 +1,9 @@
-# **How to Submit an Agent to the AutoGPT Marketplace**
+# **How to Submit an Agent to the Indra Ai Marketplace**
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/o42HPN7SihU?si=lGeNFN-xIDSFqaQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
 ## **Prerequisites**
-* A completed agent built using the AutoGPT Builder
+* A completed agent built using the Indra Ai Builder
 * Your agent must be saved before submission
 
 ## **Submission Steps**
@@ -24,7 +24,7 @@
 
 ## **After Submission**
 * Your agent will enter a "pending" state
-* The AutoGPT team will review your submission
+* The Indra Ai team will review your submission
 * If approved, your agent will appear in the marketplace as a new listing
 
 

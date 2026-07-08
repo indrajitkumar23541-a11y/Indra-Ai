@@ -1,7 +1,7 @@
-# AutoGPT Agent User Guide
+# Indra Ai Agent User Guide
 
 !!! note
-    This guide assumes you are in the `autogpt` folder, where the AutoGPT Agent
+    This guide assumes you are in the `autogpt` folder, where the Indra Ai Agent
     is located.
 
 ## Command Line Interface
@@ -18,7 +18,7 @@ Options:
 
 Commands:
   run    Sets up and runs an agent, based on the task specified by the...
-  serve  Starts an Agent Protocol compliant AutoGPT server, which creates...
+  serve  Starts an Agent Protocol compliant Indra Ai server, which creates...
 ```
 
 !!! important "For Windows users"
@@ -36,7 +36,7 @@ Commands:
 
 ### `run` &ndash; CLI mode
 
-The `run` sub-command starts AutoGPT with the legacy CLI interface.
+The `run` sub-command starts Indra Ai with the legacy CLI interface.
 
 <details>
 <summary>
@@ -118,7 +118,7 @@ frontend, by default on `http://localhost:8000`. You can configure the port it i
 $ ./autogpt.sh serve --help
 Usage: python -m autogpt serve [OPTIONS]
 
-  Starts an Agent Protocol compliant AutoGPT server, which creates a custom
+  Starts an Agent Protocol compliant Indra Ai server, which creates a custom
   agent for every task.
 
 Options:
@@ -144,15 +144,15 @@ For more information about the API of the application, see [agentprotocol.ai](ht
 !!! note
     Replace anything in angled brackets (<>) to a value you want to specify
 
-Here are some common arguments you can use when running AutoGPT:
+Here are some common arguments you can use when running Indra Ai:
 
-* Run AutoGPT with a different AI Settings file
+* Run Indra Ai with a different AI Settings file
 
     ```shell
     ./autogpt.sh --ai-settings <filename>
     ```
 
-* Run AutoGPT with a different Prompt Settings file
+* Run Indra Ai with a different Prompt Settings file
 
     ```shell
     ./autogpt.sh --prompt-settings <filename>
@@ -162,7 +162,7 @@ Here are some common arguments you can use when running AutoGPT:
     There are shorthands for some of these flags, for example `-P` for `--prompt-settings`.  
     Use `./autogpt.sh --help` for more information.
 
-[.env.template]: https://github.com/Significant-Gravitas/AutoGPT/tree/master/classic/original_autogpt/.env.template
+[.env.template]: https://github.com/Significant-Gravitas/Indra Ai/tree/master/classic/original_autogpt/.env.template
 
 ## Agent State
 [agent state]: #agent-state
@@ -183,7 +183,7 @@ is in `data/agents/<agent_id>/`. Files outside of this folder can not be accesse
 agent *unless* `RESTRICT_TO_WORKSPACE` is set to `False`.
 
 !!! warning
-    We do not recommend disabling `RESTRICT_TO_WORKSPACE`, unless AutoGPT is running in
+    We do not recommend disabling `RESTRICT_TO_WORKSPACE`, unless Indra Ai is running in
     a sandbox environment where it couldn't do any damage (e.g. Docker or a VM).
 
 ## Logs

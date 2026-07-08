@@ -57,14 +57,14 @@ function Logo() {
     <Link href="/" className="inline-block">
       <Image
         src="/autogpt-logo-dark-bg.png"
-        alt="AutoGPT"
+        alt="Indra Ai"
         width={120}
         height={54}
         className="hidden h-7 w-auto dark:block"
       />
       <Image
         src="/autogpt-logo-light-bg.png"
-        alt="AutoGPT"
+        alt="Indra Ai"
         width={120}
         height={54}
         className="block h-7 w-auto dark:hidden"

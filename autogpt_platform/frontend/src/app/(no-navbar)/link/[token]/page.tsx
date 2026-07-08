@@ -56,7 +56,7 @@ export default function PlatformLinkPage() {
       {page.status === "error" && <ErrorView message={page.errorMessage} />}
 
       <div className="mt-8 text-center text-xs text-muted-foreground">
-        <p>Powered by AutoGPT Platform</p>
+        <p>Powered by Indra Ai</p>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default function AgentUploadTab({ upload }: AgentUploadTabProps) {
   return (
     <TabsLineContent value="agent">
       <p className="mb-4 text-sm text-neutral-500">
-        Upload a previously exported AutoGPT agent file (.json).
+        Upload a previously exported Indra Ai agent file (.json).
       </p>
       <Form
         form={upload.form}

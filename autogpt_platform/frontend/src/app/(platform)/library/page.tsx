@@ -27,7 +27,7 @@ export default function LibraryPage() {
   const fleetSummary = useLibraryFleetSummary(agents);
 
   useEffect(() => {
-    document.title = "Library – AutoGPT Platform";
+    document.title = "Library – Indra Ai";
   }, []);
 
   function handleTabChange(tabId: string) {

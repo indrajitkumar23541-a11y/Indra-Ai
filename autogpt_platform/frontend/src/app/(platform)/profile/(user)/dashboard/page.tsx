@@ -5,7 +5,7 @@ import { MainDashboardPage } from "./components/MainDashboardPage/MainDashboardP
 
 export default function Page() {
   useEffect(() => {
-    document.title = "Creator Dashboard – AutoGPT Platform";
+    document.title = "Creator Dashboard – Indra Ai";
   }, []);
 
   return <MainDashboardPage />;

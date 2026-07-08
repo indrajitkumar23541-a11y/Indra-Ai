@@ -1,30 +1,30 @@
 
-# 🧠 Running AI/ML API with AutoGPT
+# 🧠 Running AI/ML API with Indra Ai
 
-Follow these steps to connect **AI/ML API** with the **AutoGPT** platform for high-performance AI text generation.
+Follow these steps to connect **AI/ML API** with the **Indra Ai** platform for high-performance AI text generation.
 
 ---
 
 ## ✅ Prerequisites
 
-1. Make sure you have gone through and completed the [AutoGPT Setup Guide](https://docs.agpt.co/platform/getting-started/), and AutoGPT is running locally at `http://localhost:3000`.
+1. Make sure you have gone through and completed the [Indra Ai Setup Guide](https://docs.agpt.co/platform/getting-started/), and Indra Ai is running locally at `http://localhost:3000`.
 2. You have an **API key** from [AI/ML API](https://aimlapi.com/app/keys?utm_source=autogpt&utm_medium=github&utm_campaign=integration).
 
 ---
 
 ## ⚙️ Setup Steps
 
-### 1. Start AutoGPT Locally
+### 1. Start Indra Ai Locally
 
 Follow the official guide:
-[📖 AutoGPT Getting Started Guide](https://docs.agpt.co/platform/getting-started/)
+[📖 Indra Ai Getting Started Guide](https://docs.agpt.co/platform/getting-started/)
 
-Make sure AutoGPT is running and accessible at:
+Make sure Indra Ai is running and accessible at:
 [http://localhost:3000](http://localhost:3000)
 
-> 💡 Keep AutoGPT running in a terminal or Docker throughout the session.
+> 💡 Keep Indra Ai running in a terminal or Docker throughout the session.
 
-![Step 1 AutoGPT Running](../imgs/aimlapi/Step%201%20AutoGPT%20Running.png)
+![Step 1 Indra Ai Running](../imgs/aimlapi/Step%201%20AutoGPT%20Running.png)
 
 ---
 
@@ -136,4 +136,4 @@ Now that AI/ML API is connected, expand your workflow by chaining additional blo
 
 ---
 
-🎉 You’re now generating AI responses using enterprise-grade models from **AI/ML API** in **AutoGPT**!
+🎉 You’re now generating AI responses using enterprise-grade models from **AI/ML API** in **Indra Ai**!

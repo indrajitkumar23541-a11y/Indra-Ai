@@ -4,7 +4,7 @@ This file provides guidance to Claude Code when working with the direct benchmar
 
 ## Overview
 
-The Direct Benchmark Harness is a high-performance testing framework for AutoGPT that directly instantiates agents without HTTP server overhead. It enables parallel execution of multiple strategy/model configurations.
+The Direct Benchmark Harness is a high-performance testing framework for Indra Ai that directly instantiates agents without HTTP server overhead. It enables parallel execution of multiple strategy/model configurations.
 
 ## Quick Reference
 
@@ -211,7 +211,7 @@ reports/
 ## Dependencies
 
 - `autogpt-forge` - Core agent framework
-- `autogpt` - Original AutoGPT agent
+- `autogpt` - Original Indra Ai agent
 - `click` - CLI framework
 - `pydantic` - Data models
 - `rich` - Terminal UI

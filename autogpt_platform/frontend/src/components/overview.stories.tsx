@@ -22,12 +22,12 @@ function OverviewComponent() {
       <div className="space-y-8">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold text-gray-900">
-            AutoGPT Design System
+            Indra Ai Design System
           </h1>
           <p className="text-xl leading-relaxed text-gray-600">
-            Welcome to the AutoGPT Design System - a comprehensive collection of
+            Welcome to the Indra Ai Design System - a comprehensive collection of
             reusable components, design tokens, and guidelines that power the
-            AutoGPT Platform. This system ensures consistency, accessibility,
+            Indra Ai. This system ensures consistency, accessibility,
             and efficiency across all our user interfaces.
           </p>
           <div className="inline-flex items-center">
@@ -135,7 +135,7 @@ function OverviewComponent() {
               🎨 Built with Tailwind & shadcn/ui
             </h4>
             <p className="text-sm leading-relaxed text-gray-600">
-              The AutoGPT Design System leverages{" "}
+              The Indra Ai Design System leverages{" "}
               <a
                 href="https://tailwindcss.com/"
                 target="_blank"
@@ -172,7 +172,7 @@ function OverviewComponent() {
               </li>
               <li>
                 <strong>Brand Compliance:</strong> All colors and styles match
-                AutoGPT&apos;s brand
+                Indra Ai&apos;s brand
               </li>
             </ul>
           </div>
@@ -188,7 +188,7 @@ function OverviewComponent() {
               <li>
                 If you need something new,{" "}
                 <a
-                  href="https://github.com/Significant-Gravitas/AutoGPT/issues/new?template=design-system.md"
+                  href="https://github.com/Significant-Gravitas/Indra Ai/issues/new?template=design-system.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={linkStyle}
@@ -213,7 +213,7 @@ function OverviewComponent() {
             Contributing to the Design System
           </h2>
           <p className="text-lg text-gray-600">
-            Help us improve and expand the AutoGPT Design System. Whether
+            Help us improve and expand the Indra Ai Design System. Whether
             you&apos;re fixing bugs, adding new components, or enhancing
             existing ones, your contributions are valuable to the community.
           </p>
@@ -393,26 +393,26 @@ function OverviewComponent() {
       <div className="space-y-8">
         <h3 className="text-3xl font-bold text-gray-900">Get Involved</h3>
         <p className="text-md leading-relaxed text-gray-600">
-          Join the AutoGPT community and help build the future of AI automation.
+          Join the Indra Ai community and help build the future of AI automation.
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
           {[
             {
               icon: "/storybook/github.svg",
               title:
-                "Contribute to the AutoGPT Platform and help build the future of AI automation.",
-              link: "https://github.com/Significant-Gravitas/AutoGPT",
+                "Contribute to the Indra Ai and help build the future of AI automation.",
+              link: "https://github.com/Significant-Gravitas/Indra Ai",
               linkText: "Star on GitHub",
             },
             {
               icon: "/storybook/discord.svg",
-              title: "Get support and chat with the AutoGPT community.",
+              title: "Get support and chat with the Indra Ai community.",
               link: "https://discord.gg/autogpt",
               linkText: "Join Discord",
             },
             {
               icon: "/storybook/youtube.svg",
-              title: "Watch AutoGPT tutorials and feature demonstrations.",
+              title: "Watch Indra Ai tutorials and feature demonstrations.",
               link: "https://www.youtube.com/@AutoGPT-Official",
               linkText: "Watch on YouTube",
             },

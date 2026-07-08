@@ -1,15 +1,15 @@
-# **How to Edit an Agent in AutoGPT**
+# **How to Edit an Agent in Indra Ai**
 
 ## **Overview**
 
-This guide explains how to access and edit existing agents in AutoGPT, whether they're your own creations or downloaded from the marketplace.
+This guide explains how to access and edit existing agents in Indra Ai, whether they're your own creations or downloaded from the marketplace.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/-AKPW5N1O8k?si=iSEFrUAcS7R8ctfL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
 ## **Steps to Edit an Agent**
 
 ### **1. Access the Monitor Tab**
-* Navigate to the Monitor Tab in the AutoGPT builder
+* Navigate to the Monitor Tab in the Indra Ai builder
 * You'll see a list of all your agents, including:
     * Agents you've created
     * Agents downloaded from the marketplace

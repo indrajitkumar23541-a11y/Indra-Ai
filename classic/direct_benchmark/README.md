@@ -1,6 +1,6 @@
 # Direct Benchmark Harness
 
-High-performance benchmark harness for AutoGPT that directly instantiates agents without HTTP server overhead, enabling parallel execution of multiple configurations.
+High-performance benchmark harness for Indra Ai that directly instantiates agents without HTTP server overhead, enabling parallel execution of multiple configurations.
 
 ## Features
 

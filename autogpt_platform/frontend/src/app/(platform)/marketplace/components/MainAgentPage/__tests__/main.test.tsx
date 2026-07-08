@@ -25,7 +25,7 @@ describe("MainAgentPage", () => {
   test("renders the marketplace agent details and related sections", async () => {
     const agentDetails = getGetV2GetSpecificAgentResponseMock({
       agent_name: "Deterministic Agent",
-      creator: "AutoGPT",
+      creator: "Indra Ai",
       creator_avatar: "",
       sub_heading: "A stable marketplace listing",
       description: "This agent is used for integration coverage.",
@@ -43,7 +43,7 @@ describe("MainAgentPage", () => {
           ...getGetV2ListStoreAgentsResponseMock().agents[0],
           slug: "other-agent",
           agent_name: "Other Agent",
-          creator: "AutoGPT",
+          creator: "Indra Ai",
         },
       ],
     });
@@ -88,9 +88,9 @@ describe("MainAgentPage", () => {
       "This agent is used for integration coverage.",
     );
     expect(screen.getByTestId("agent-creator").textContent).toContain(
-      "AutoGPT",
+      "Indra Ai",
     );
-    expect(screen.getByText("Other agents by AutoGPT")).toBeDefined();
+    expect(screen.getByText("Other agents by Indra Ai")).toBeDefined();
     expect(screen.getByText("Similar agents")).toBeDefined();
   });
 });

@@ -1,6 +1,6 @@
-# AutoGPT Platform
+# Indra Ai
 
-Welcome to the AutoGPT Platform - a powerful system for creating and running AI agents to solve business problems. This platform enables you to harness the power of artificial intelligence to automate tasks, analyze data, and generate insights for your organization.
+Welcome to the Indra Ai - a powerful system for creating and running AI agents to solve business problems. This platform enables you to harness the power of artificial intelligence to automate tasks, analyze data, and generate insights for your organization.
 
 ## Getting Started
 
@@ -11,13 +11,13 @@ Welcome to the AutoGPT Platform - a powerful system for creating and running AI 
 
 ### Running the System
 
-To run the AutoGPT Platform, follow these steps:
+To run the Indra Ai, follow these steps:
 
 1. Clone this repository to your local machine and navigate to the `autogpt_platform` directory within the repository:
 
    ```
-   git clone <https://github.com/Significant-Gravitas/AutoGPT.git | git@github.com:Significant-Gravitas/AutoGPT.git>
-   cd AutoGPT/autogpt_platform
+   git clone <https://github.com/Significant-Gravitas/Indra Ai.git | git@github.com:Significant-Gravitas/Indra Ai.git>
+   cd Indra Ai/autogpt_platform
    ```
 
 2. Run the following command:
@@ -36,7 +36,7 @@ To run the AutoGPT Platform, follow these steps:
 
    This command will start all the necessary backend services defined in the `docker-compose.yml` file in detached mode.
 
-4. After all the services are in ready state, open your browser and navigate to `http://localhost:3000` to access the AutoGPT Platform frontend.
+4. After all the services are in ready state, open your browser and navigate to `http://localhost:3000` to access the Indra Ai frontend.
 
 ### Running Just Core services
 
@@ -71,7 +71,7 @@ make run-frontend
 
 ### Docker Compose Commands
 
-Here are some useful Docker Compose commands for managing your AutoGPT Platform:
+Here are some useful Docker Compose commands for managing your Indra Ai:
 
 - `docker compose up -d`: Start the services in detached mode.
 - `docker compose stop`: Stop the running services without removing them.
@@ -134,7 +134,7 @@ Here are some common scenarios where you might use multiple Docker Compose comma
    ```
    This shows the current status of all services defined in your docker-compose.yml file.
 
-These scenarios demonstrate how to use Docker Compose commands in combination to manage your AutoGPT Platform effectively.
+These scenarios demonstrate how to use Docker Compose commands in combination to manage your Indra Ai effectively.
 
 ### Persisting Data
 

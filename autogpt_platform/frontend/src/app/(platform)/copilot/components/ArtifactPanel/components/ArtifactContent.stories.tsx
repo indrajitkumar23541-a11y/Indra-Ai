@@ -267,7 +267,7 @@ export const JSONArtifact: Story = {
           return HttpResponse.text(
             JSON.stringify(
               {
-                name: "AutoGPT Agent",
+                name: "Indra Ai Agent",
                 version: "2.0",
                 capabilities: ["web_search", "code_execution", "file_io"],
                 settings: { maxTokens: 4096, temperature: 0.7 },

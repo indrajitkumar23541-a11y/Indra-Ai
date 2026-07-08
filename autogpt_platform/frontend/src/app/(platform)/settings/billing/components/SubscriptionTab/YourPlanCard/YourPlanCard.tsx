@@ -125,7 +125,7 @@ export function YourPlanCard({ index = 0 }: Props) {
             </Text>
           ) : (
             <Text variant="body" as="span" className="text-zinc-700">
-              Pick a plan to continue using AutoGPT.
+              Pick a plan to continue using Indra Ai.
             </Text>
           )}
           {plan.isPaidPlan &&

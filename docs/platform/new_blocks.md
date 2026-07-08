@@ -1,6 +1,6 @@
-# Contributing to AutoGPT Agent Server: Creating and Testing Blocks
+# Contributing to Indra Ai Agent Server: Creating and Testing Blocks
 
-This guide will walk you through the process of creating and testing a new block for the AutoGPT Agent Server, using the WikipediaSummaryBlock as an example.
+This guide will walk you through the process of creating and testing a new block for the Indra Ai Agent Server, using the WikipediaSummaryBlock as an example.
 
 !!! tip "New SDK-Based Approach"
 For a more comprehensive guide using the new SDK pattern with ProviderBuilder and advanced features like OAuth and webhooks, see the [Block SDK Guide](block-sdk-guide.md).
@@ -192,7 +192,7 @@ attachment: Union[Media, DeepLink, Poll, Place, Quote] = SchemaField(
 )
 ```
 
-The `discriminator` parameter tells AutoGPT which field to look at in the input to determine which type it is.
+The `discriminator` parameter tells Indra Ai which field to look at in the input to determine which type it is.
 
 In each model, you need to define the discriminator value:
 
@@ -315,7 +315,7 @@ class BlockWithAPIKeyAndOAuth(Block):
 
 The credentials will be automagically injected by the executor in the back end.
 
-The `APIKeyCredentials` and `OAuth2Credentials` models are defined [here](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/autogpt_libs/autogpt_libs/supabase_integration_credentials_store/types.py).
+The `APIKeyCredentials` and `OAuth2Credentials` models are defined [here](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/autogpt_libs/autogpt_libs/supabase_integration_credentials_store/types.py).
 To use them in e.g. an API request, you can either access the token directly:
 
 ```python
@@ -389,38 +389,38 @@ As you can see, this is modeled after the standard OAuth2 flow.
 
 Aside from implementing the `OAuthHandler` itself, adding a handler into the system requires two more things:
 
-- Adding the handler class to `HANDLERS_BY_NAME` under [`integrations/oauth/__init__.py`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/integrations/oauth/__init__.py)
+- Adding the handler class to `HANDLERS_BY_NAME` under [`integrations/oauth/__init__.py`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/integrations/oauth/__init__.py)
 
 ```python title="backend/integrations/oauth/__init__.py"
 --8<-- "autogpt_platform/backend/backend/integrations/oauth/__init__.py:HANDLERS_BY_NAMEExample"
 ```
 
-- Adding `{provider}_client_id` and `{provider}_client_secret` to the application's `Secrets` under [`util/settings.py`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/util/settings.py)
+- Adding `{provider}_client_id` and `{provider}_client_secret` to the application's `Secrets` under [`util/settings.py`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/util/settings.py)
 
 ```python title="backend/util/settings.py"
 --8<-- "autogpt_platform/backend/backend/util/settings.py:OAuthServerCredentialsExample"
 ```
 
-[OAuth2 handlers]: https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpt_platform/backend/backend/integrations/oauth
-[`BaseOAuthHandler`]: https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/integrations/oauth/base.py
+[OAuth2 handlers]: https://github.com/Significant-Gravitas/Indra Ai/tree/master/autogpt_platform/backend/backend/integrations/oauth
+[`BaseOAuthHandler`]: https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/integrations/oauth/base.py
 
 #### Adding to the frontend
 
-You will need to add the provider (api or oauth) to the `CredentialsInput` component in [`/frontend/src/app/(platform)/library/agents/[id]/components/AgentRunsView/components/CredentialsInputs/CredentialsInputs.tsx`](<https://github.com/Significant-Gravitas/AutoGPT/blob/dev/autogpt_platform/frontend/src/app/(platform)/library/agents/[id]/components/AgentRunsView/components/CredentialsInputs/CredentialsInputs.tsx>).
+You will need to add the provider (api or oauth) to the `CredentialsInput` component in [`/frontend/src/app/(platform)/library/agents/[id]/components/AgentRunsView/components/CredentialsInputs/CredentialsInputs.tsx`](<https://github.com/Significant-Gravitas/Indra Ai/blob/dev/autogpt_platform/frontend/src/app/(platform)/library/agents/[id]/components/AgentRunsView/components/CredentialsInputs/CredentialsInputs.tsx>).
 
 ```ts title="frontend/src/components/integrations/credentials-input.tsx"
 --8 <
   --"autogpt_platform/frontend/src/app/(platform)/library/agents/[id]/components/AgentRunsView/components/CredentialsInputs/CredentialsInputs.tsx:ProviderIconsEmbed";
 ```
 
-You will also need to add the provider to the credentials provider list in [`frontend/src/components/integrations/helper.ts`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/frontend/src/components/integrations/helper.ts).
+You will also need to add the provider to the credentials provider list in [`frontend/src/components/integrations/helper.ts`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/frontend/src/components/integrations/helper.ts).
 
 ```ts title="frontend/src/components/integrations/helper.ts"
 --8 <
   --"autogpt_platform/frontend/src/components/integrations/helper.ts:CredentialsProviderNames";
 ```
 
-Finally you will need to add the provider to the `CredentialsType` enum in [`frontend/src/lib/autogpt-server-api/types.ts`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/frontend/src/lib/autogpt-server-api/types.ts).
+Finally you will need to add the provider to the `CredentialsType` enum in [`frontend/src/lib/autogpt-server-api/types.ts`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/frontend/src/lib/autogpt-server-api/types.ts).
 
 ```ts title="frontend/src/lib/autogpt-server-api/types.ts"
 --8 <
@@ -429,13 +429,13 @@ Finally you will need to add the provider to the `CredentialsType` enum in [`fro
 
 #### Example: GitHub integration
 
-- GitHub blocks with API key + OAuth2 support: [`blocks/github`](https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpt_platform/backend/backend/blocks/github/)
+- GitHub blocks with API key + OAuth2 support: [`blocks/github`](https://github.com/Significant-Gravitas/Indra Ai/tree/master/autogpt_platform/backend/backend/blocks/github/)
 
 ```python title="backend/blocks/github/issues.py"
 --8<-- "autogpt_platform/backend/backend/blocks/github/issues.py:GithubCommentBlockExample"
 ```
 
-- GitHub OAuth2 handler: [`integrations/oauth/github.py`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/integrations/oauth/github.py)
+- GitHub OAuth2 handler: [`integrations/oauth/github.py`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/integrations/oauth/github.py)
 
 ```python title="backend/integrations/oauth/github.py"
 --8<-- "autogpt_platform/backend/backend/integrations/oauth/github.py:GithubOAuthHandlerExample"
@@ -443,7 +443,7 @@ Finally you will need to add the provider to the `CredentialsType` enum in [`fro
 
 #### Example: Google integration
 
-- Google OAuth2 handler: [`integrations/oauth/google.py`](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/integrations/oauth/google.py)
+- Google OAuth2 handler: [`integrations/oauth/google.py`](https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/integrations/oauth/google.py)
 
 ```python title="backend/integrations/oauth/google.py"
 --8<-- "autogpt_platform/backend/backend/integrations/oauth/google.py:GoogleOAuthHandlerExample"
@@ -585,7 +585,7 @@ And add a reference to your `WebhooksManager` class in `load_webhook_managers`:
 
 <details>
 <summary>
-GitHub Webhook triggers: <a href="https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/blocks/github/triggers.py"><code>blocks/github/triggers.py</code></a>
+GitHub Webhook triggers: <a href="https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/blocks/github/triggers.py"><code>blocks/github/triggers.py</code></a>
 </summary>
 
 ```python title="backend/blocks/github/triggers.py"
@@ -596,7 +596,7 @@ GitHub Webhook triggers: <a href="https://github.com/Significant-Gravitas/AutoGP
 
 <details>
 <summary>
-GitHub Webhooks Manager: <a href="https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/integrations/webhooks/github.py"><code>integrations/webhooks/github.py</code></a>
+GitHub Webhooks Manager: <a href="https://github.com/Significant-Gravitas/Indra Ai/blob/master/autogpt_platform/backend/backend/integrations/webhooks/github.py"><code>integrations/webhooks/github.py</code></a>
 </summary>
 
 ```python title="backend/integrations/webhooks/github.py"
@@ -772,4 +772,4 @@ You can use MediaFileType to handle the importing and exporting of files out of 
 
 6. **Update tests when changing block behavior**: If you modify your block, ensure the tests are updated accordingly.
 
-By following these steps, you can create new blocks that extend the functionality of the AutoGPT Agent Server.
+By following these steps, you can create new blocks that extend the functionality of the Indra Ai Agent Server.

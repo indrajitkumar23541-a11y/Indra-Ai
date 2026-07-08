@@ -1,4 +1,4 @@
-# **How to Create an AI Agent as a Block in AutoGPT**
+# **How to Create an AI Agent as a Block in Indra Ai**
 
 ## **Overview**
 

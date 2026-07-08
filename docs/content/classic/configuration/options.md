@@ -1,13 +1,13 @@
 # Configuration
 
 Configuration of sensitive settings such as API credentials is done through environment variables.
-You can set configuration variables via the `.env` file. If you don't have a `.env` file, create a copy of `.env.template` in your `AutoGPT` folder and name it `.env`.
+You can set configuration variables via the `.env` file. If you don't have a `.env` file, create a copy of `.env.template` in your `Indra Ai` folder and name it `.env`.
 
 ## Environment Variables
 
 - `AUTHORISE_COMMAND_KEY`: Key response accepted when authorising commands. Default: y
-- `ANTHROPIC_API_KEY`: Set this if you want to use Anthropic models with AutoGPT
-- `AZURE_CONFIG_FILE`: Location of the Azure Config file relative to the AutoGPT root directory. Default: azure.yaml
+- `ANTHROPIC_API_KEY`: Set this if you want to use Anthropic models with Indra Ai
+- `AZURE_CONFIG_FILE`: Location of the Azure Config file relative to the Indra Ai root directory. Default: azure.yaml
 - `COMPONENT_CONFIG_FILE`: Path to the component configuration file (json) for an agent. Optional
 - `DISABLED_COMMANDS`: Commands to disable. Use comma separated names of commands. See the list of commands from built-in components [here](../../forge/components/components.md). Default: None
 - `ELEVENLABS_API_KEY`: ElevenLabs API Key. Optional.
@@ -19,7 +19,7 @@ You can set configuration variables via the `.env` file. If you don't have a `.e
 - `GITHUB_USERNAME`: GitHub Username. Optional.
 - `GOOGLE_API_KEY`: Google API key. Optional.
 - `GOOGLE_CUSTOM_SEARCH_ENGINE_ID`: [Google custom search engine ID](https://programmablesearchengine.google.com/controlpanel/all). Optional.
-- `GROQ_API_KEY`: Set this if you want to use Groq models with AutoGPT
+- `GROQ_API_KEY`: Set this if you want to use Groq models with Indra Ai
 - `HUGGINGFACE_API_TOKEN`: HuggingFace API, to be used for both image generation and audio to text. Optional.
 - `HUGGINGFACE_IMAGE_MODEL`: HuggingFace model to use for image generation. Default: CompVis/stable-diffusion-v1-4
 - `LLAMAFILE_API_BASE`: Llamafile API base URL. Default: `http://localhost:8080/v1`

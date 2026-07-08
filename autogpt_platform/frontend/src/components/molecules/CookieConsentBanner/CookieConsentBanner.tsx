@@ -42,7 +42,7 @@ export function CookieConsentBanner() {
                   variant="body"
                   className="text-neutral-600 dark:text-neutral-400"
                 >
-                  AutoGPT uses essential cookies for login and optional cookies
+                  Indra Ai uses essential cookies for login and optional cookies
                   for analytics and error tracking to improve our service.
                 </Text>
               </div>

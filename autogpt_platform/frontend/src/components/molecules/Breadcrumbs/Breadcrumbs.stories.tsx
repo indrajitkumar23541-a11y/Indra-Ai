@@ -124,7 +124,7 @@ export const DeepNavigation: Story = {
 export const LongText: Story = {
   args: {
     items: [
-      { name: "AutoGPT Platform", link: "/" },
+      { name: "Indra Ai", link: "/" },
       { name: "Agent Library Management", link: "/library" },
       { name: "Advanced Configuration Settings", link: "/library/settings" },
     ],

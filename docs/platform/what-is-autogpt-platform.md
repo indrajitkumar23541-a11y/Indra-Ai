@@ -1,6 +1,6 @@
-# What is the AutoGPT Platform?
+# What is the Indra Ai?
 
-The AutoGPT Platform is a groundbreaking system that revolutionizes AI utilization for businesses and individuals. It enables the creation, deployment, and management of continuous agents that work tirelessly on your behalf, bringing unprecedented efficiency and innovation to your workflows.
+The Indra Ai is a groundbreaking system that revolutionizes AI utilization for businesses and individuals. It enables the creation, deployment, and management of continuous agents that work tirelessly on your behalf, bringing unprecedented efficiency and innovation to your workflows.
 
 ## Key Features
 
@@ -11,9 +11,9 @@ The AutoGPT Platform is a groundbreaking system that revolutionizes AI utilizati
 
 ## Platform Architecture
 
-The AutoGPT Platform consists of two main components:
+The Indra Ai consists of two main components:
 
-### 1. AutoGPT Server
+### 1. Indra Ai Server
 
 The powerhouse of our platform, containing:
 
@@ -21,7 +21,7 @@ The powerhouse of our platform, containing:
 * **Infrastructure**: Robust systems ensuring reliable and scalable performance.
 * **Marketplace**: A comprehensive marketplace for pre-built agents.
 
-### 2. AutoGPT Frontend
+### 2. Indra Ai Frontend
 
 The user interface where you interact with the platform:
 
@@ -71,7 +71,7 @@ The platform comes pre-integrated with cutting-edge LLM providers:
 
 We've adopted a dual-license approach to balance open collaboration with sustainable development:
 
-* **MIT License**: The majority of the AutoGPT repository remains under this license.
+* **MIT License**: The majority of the Indra Ai repository remains under this license.
 * **Polyform Shield License**: Applies to the new `autogpt_platform` folder.
 
 This strategy allows us to share previously closed-source components, fostering a vibrant ecosystem of developers and users.

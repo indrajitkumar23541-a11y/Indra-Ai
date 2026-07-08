@@ -191,7 +191,7 @@ describe("SettingsIntegrationsPage — delete", () => {
         makeCred({
           id: "a1",
           provider: "ayrshare",
-          title: "Ayrshare (managed by AutoGPT)",
+          title: "Ayrshare (managed by Indra Ai)",
           is_managed: true,
         }),
       ]),
@@ -200,7 +200,7 @@ describe("SettingsIntegrationsPage — delete", () => {
     render(<SettingsIntegrationsPage />);
 
     expect(
-      await screen.findByText("Ayrshare (managed by AutoGPT)"),
+      await screen.findByText("Ayrshare (managed by Indra Ai)"),
     ).toBeDefined();
     expect(
       screen.queryByRole("button", { name: /delete ayrshare/i }),

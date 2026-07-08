@@ -1504,7 +1504,7 @@ describe("ArtifactContent", () => {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AutoGPT Beta Launch Interactive Report</title>
+<title>Indra Ai Beta Launch Interactive Report</title>
 <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 <style>
   :root { --bg: #f8f9fa; --primary: #6c5ce7; }
@@ -1513,7 +1513,7 @@ describe("ArtifactContent", () => {
 </style>
 </head>
 <body>
-<header><h1>\u{1F4CA} AutoGPT Beta Launch Interactive Report</h1></header>
+<header><h1>\u{1F4CA} Indra Ai Beta Launch Interactive Report</h1></header>
 <div class="chart-container" id="globalActivationChart"></div>
 <script>
   function showTab(tabId, groupId) {

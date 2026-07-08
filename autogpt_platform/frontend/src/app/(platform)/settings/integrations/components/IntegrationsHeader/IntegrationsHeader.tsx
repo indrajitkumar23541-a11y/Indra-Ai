@@ -16,7 +16,7 @@ export function IntegrationsHeader({ onConnect }: Props) {
           Third Party Integrations
         </Text>
         <Text variant="body" className="mt-4 max-w-[600px] text-[#505057]">
-          Manage the 3rd party accounts you&apos;ve connected to AutoGPT. These
+          Manage the 3rd party accounts you&apos;ve connected to Indra Ai. These
           are services that can be used by your agents — like Gmail for sending
           emails, GitHub for code, or Notion for documents.
         </Text>

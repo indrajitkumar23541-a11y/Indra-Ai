@@ -105,7 +105,7 @@ describe("ApiKeysPage", () => {
     fireEvent.click(screen.getByText("Create"));
 
     expect(
-      await screen.findByText("AutoGPT Platform API Key Created"),
+      await screen.findByText("Indra Ai API Key Created"),
     ).toBeDefined();
 
     await waitFor(() => {

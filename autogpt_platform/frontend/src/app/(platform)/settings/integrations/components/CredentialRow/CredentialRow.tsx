@@ -93,7 +93,7 @@ export function CredentialRow({
               </span>
             </TooltipTrigger>
             <TooltipContent side="top">
-              Managed by AutoGPT — cannot be removed
+              Managed by Indra Ai — cannot be removed
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

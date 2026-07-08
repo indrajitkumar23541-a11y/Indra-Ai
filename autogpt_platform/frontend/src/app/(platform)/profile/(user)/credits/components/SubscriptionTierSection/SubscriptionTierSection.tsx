@@ -134,7 +134,7 @@ export function SubscriptionTierSection() {
           role="status"
           className="rounded-md border border-violet-300 bg-violet-50 px-4 py-3 text-sm text-violet-900 dark:border-violet-700 dark:bg-violet-900/20 dark:text-violet-200"
         >
-          <p className="font-medium">Pick a plan to continue using AutoGPT.</p>
+          <p className="font-medium">Pick a plan to continue using Indra Ai.</p>
           <p className="mt-1">
             Your account doesn&apos;t have an active subscription. Choose a tier
             below to unlock AutoPilot and start running agents.

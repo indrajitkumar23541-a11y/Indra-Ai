@@ -30,7 +30,7 @@ export function WelcomeStep() {
             className="relative right-[3rem] h-24 w-[12rem]"
             hideText
           />
-          <Text variant="h3">Welcome to AutoGPT</Text>
+          <Text variant="h3">Welcome to Indra Ai</Text>
           <Text variant="lead" as="span" className="!text-zinc-500">
             Let&apos;s personalize your experience so{" "}
             <span className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent">

@@ -38,7 +38,7 @@ beforeEach(() => {
 });
 
 describe("SharePage (execution share viewer)", () => {
-  test("renders the AutoGPT logo header + run summary + outputs on the happy path", async () => {
+  test("renders the Indra Ai logo header + run summary + outputs on the happy path", async () => {
     server.use(
       getGetV1GetSharedExecutionMockHandler200(
         (): SharedExecutionResponse => ({
@@ -57,7 +57,7 @@ describe("SharePage (execution share viewer)", () => {
     // Logo (rendered inside the chrome wrapper at the top of the page).
     // Both light + dark variants ship in the DOM behind dark: class
     // selectors, so we look for at least one match.
-    const logos = await screen.findAllByAltText("AutoGPT");
+    const logos = await screen.findAllByAltText("Indra Ai");
     expect(logos.length).toBeGreaterThan(0);
     // Public-share affordance alert.
     expect(

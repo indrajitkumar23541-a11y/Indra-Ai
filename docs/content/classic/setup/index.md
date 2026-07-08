@@ -1,4 +1,4 @@
-# AutoGPT Agent setup
+# Indra Ai Agent setup
 
 [🐋 **Set up & Run with Docker**](./docker.md)
 &ensp;|&ensp;
@@ -20,7 +20,7 @@
 ### Windows
 
 !!! attention
-    We recommend setting up AutoGPT with WSL. Some things don't work exactly the same on
+    We recommend setting up Indra Ai with WSL. Some things don't work exactly the same on
     Windows and we currently can't provide specialized instructions for all those cases.
 
 - Python 3.10 or later ([instructions](https://www.tutorialspoint.com/how-to-install-python-in-windows))
@@ -28,33 +28,33 @@
 - [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
 
 
-## Setting up AutoGPT
+## Setting up Indra Ai
 
-### Getting AutoGPT
+### Getting Indra Ai
 
-Since we don't ship AutoGPT as a desktop application, you'll need to download the
+Since we don't ship Indra Ai as a desktop application, you'll need to download the
 [project] from GitHub and give it a place on your computer.
 
 ![Screenshot of the dialog to clone or download the repo](get-repo-dialog.png)
 
 - To get the latest bleeding edge version, use `master`.
-- If you're looking for more stability, check out the latest AutoGPT [release][releases].
+- If you're looking for more stability, check out the latest Indra Ai [release][releases].
 
-[project]: https://github.com/Significant-Gravitas/AutoGPT
-[releases]: https://github.com/Significant-Gravitas/AutoGPT/releases
+[project]: https://github.com/Significant-Gravitas/Indra Ai
+[releases]: https://github.com/Significant-Gravitas/Indra Ai/releases
 
 !!! note
-    These instructions don't apply if you're looking to run AutoGPT as a docker image.
+    These instructions don't apply if you're looking to run Indra Ai as a docker image.
     Instead, check out the [Docker setup](./docker.md) guide.
 
 ### Completing the Setup
 
-Once you have cloned or downloaded the project, you can find the AutoGPT Agent in the
+Once you have cloned or downloaded the project, you can find the Indra Ai Agent in the
 `original_autogpt/` folder.
-Inside this folder you can configure the AutoGPT application with an `.env` file and (optionally) a JSON configuration file:
+Inside this folder you can configure the Indra Ai application with an `.env` file and (optionally) a JSON configuration file:
 
 - `.env` for environment variables, which are mostly used for sensitive data like API keys
-- a JSON configuration file to customize certain features of AutoGPT's [Components](../../forge/components/introduction.md)
+- a JSON configuration file to customize certain features of Indra Ai's [Components](../../forge/components/introduction.md)
 
 See the [Configuration](../configuration/options.md) reference for a list of available environment variables.
 
@@ -90,10 +90,10 @@ See the [user guide](../usage.md) for further instructions.
 
 ## Setting up LLM providers
 
-You can use AutoGPT with any of the following LLM providers.
+You can use Indra Ai with any of the following LLM providers.
 Each of them comes with its own setup instructions.
 
-AutoGPT was originally built on top of OpenAI's GPT-4, but now you can get
+Indra Ai was originally built on top of OpenAI's GPT-4, but now you can get
 similar and interesting results using other models/providers too.
 If you don't know which to choose, you can safely go with OpenAI*.
 
@@ -102,7 +102,7 @@ If you don't know which to choose, you can safely go with OpenAI*.
 ### OpenAI
 
 !!! attention
-    To use AutoGPT with GPT-4 (recommended), you need to set up a paid OpenAI account
+    To use Indra Ai with GPT-4 (recommended), you need to set up a paid OpenAI account
     with some money in it. Please refer to OpenAI for further instructions ([link][openai/help-gpt-4-access]).
     Free accounts are [limited][openai/api-limits] to GPT-3.5 with only 3 requests per minute.
 
@@ -213,13 +213,13 @@ For more information and in-depth documentation, check out the [llamafile docume
 
 !!! warning
     Due to the issues linked below, llamafiles don't work on WSL. To use a llamafile
-    with AutoGPT in WSL, you will have to run the llamafile in Windows (outside WSL).
+    with Indra Ai in WSL, you will have to run the llamafile in Windows (outside WSL).
 
     <details>
     <summary>Instructions</summary>
 
     1. Get the `llamafile/serve.py` script through one of these two ways:
-        1. Clone the AutoGPT repo somewhere in your Windows environment,
+        1. Clone the Indra Ai repo somewhere in your Windows environment,
            with the script located at `classic/original_autogpt/scripts/llamafile/serve.py`
         2. Download just the [serve.py] script somewhere in your Windows environment
     2. Make sure you have `click` installed: `pip install click`
@@ -231,7 +231,7 @@ For more information and in-depth documentation, check out the [llamafile docume
     5. In WSL, set `LLAMAFILE_API_BASE=http://{WSL_HOST_ADDR}:8080/v1` in your `.env`.
     6. Follow the rest of the regular instructions below.
 
-    [serve.py]: https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/original_autogpt/scripts/llamafile/serve.py
+    [serve.py]: https://github.com/Significant-Gravitas/Indra Ai/blob/master/classic/original_autogpt/scripts/llamafile/serve.py
     </details>
 
     * [Mozilla-Ocho/llamafile#356](https://github.com/Mozilla-Ocho/llamafile/issues/356)
@@ -260,4 +260,4 @@ For more information and in-depth documentation, check out the [llamafile docume
    set `LLAMAFILE_API_BASE` in `.env` to the right base URL
 
 [llamafile documentation]: https://github.com/Mozilla-Ocho/llamafile#readme
-[classic/forge/llamafile.py]: https://github.com/Significant-Gravitas/AutoGPT/blob/master/classic/forge/llm/providers/llamafile/llamafile.py
+[classic/forge/llamafile.py]: https://github.com/Significant-Gravitas/Indra Ai/blob/master/classic/forge/llm/providers/llamafile/llamafile.py

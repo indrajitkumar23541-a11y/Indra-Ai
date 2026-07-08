@@ -2,7 +2,7 @@
 
 ## Overview
 
-The FlowEditor is the core visual graph builder component of the AutoGPT Platform. It allows users to create, edit, and execute workflows by connecting nodes (blocks) together in a visual canvas powered by React Flow (XYFlow).
+The FlowEditor is the core visual graph builder component of the Indra Ai. It allows users to create, edit, and execute workflows by connecting nodes (blocks) together in a visual canvas powered by React Flow (XYFlow).
 
 ---
 

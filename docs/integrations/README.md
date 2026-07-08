@@ -15,9 +15,9 @@ layout:
     visible: true
 ---
 
-# AutoGPT Blocks Overview
+# Indra Ai Blocks Overview
 
-AutoGPT uses a modular approach with various "blocks" to handle different tasks. These blocks are the building blocks of AutoGPT workflows, allowing users to create complex automations by combining simple, specialized components.
+Indra Ai uses a modular approach with various "blocks" to handle different tasks. These blocks are the building blocks of Indra Ai workflows, allowing users to create complex automations by combining simple, specialized components.
 
 {% hint style="info" %}
 **Creating Your Own Blocks**
@@ -620,7 +620,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 | Block Name | Description |
 |------------|-------------|
 | [Agent Executor](block-integrations/misc.md#agent-executor) | Executes an existing agent inside your agent |
-| [AutoPilot](block-integrations/misc.md#autopilot) | Execute tasks using AutoGPT AutoPilot with full access to platform tools (agent management, workspace files, web fetch, block execution, and more) |
+| [AutoPilot](block-integrations/misc.md#autopilot) | Execute tasks using Indra Ai AutoPilot with full access to platform tools (agent management, workspace files, web fetch, block execution, and more) |
 
 ## CRM Services
 

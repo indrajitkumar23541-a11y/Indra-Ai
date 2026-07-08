@@ -1703,11 +1703,11 @@ export const IconMoon = createIcon((props) => (
 ));
 
 /**
- * AutoGPT Logo icon component.
+ * Indra Ai Logo icon component.
  *
  * @component IconAutoGPTLogo
  * @param {IconProps} props - The props object containing additional attributes and event handlers for the icon.
- * @returns {JSX.Element} - The AutoGPT logo icon.
+ * @returns {JSX.Element} - The Indra Ai logo icon.
  */
 export const IconAutoGPTLogo = createIcon((props) => (
   <svg
@@ -1716,7 +1716,7 @@ export const IconAutoGPTLogo = createIcon((props) => (
     viewBox="0 0 89 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="AutoGPT Logo"
+    aria-label="Indra Ai Logo"
     {...props}
   >
     <g id="AutoGPT-logo 1" clipPath="url(#clip0_3364_2463)">

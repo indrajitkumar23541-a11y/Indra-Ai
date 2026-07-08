@@ -61,7 +61,7 @@ export default function AuthFeedback({
                   The provided email may not be allowed to sign up.
                 </span>
                 <HelpItem
-                  title="AutoGPT Platform is currently in closed beta. "
+                  title="Indra Ai is currently in closed beta. "
                   description="You can join "
                   linkText="the waitlist here"
                   href="https://agpt.co/waitlist"
@@ -71,7 +71,7 @@ export default function AuthFeedback({
                   title="You can self host the platform!"
                   description="Visit our"
                   linkText="GitHub repository"
-                  href="https://github.com/Significant-Gravitas/AutoGPT"
+                  href="https://github.com/Significant-Gravitas/Indra Ai"
                 />
               </div>
             </CardContent>
@@ -96,7 +96,7 @@ export default function AuthFeedback({
         <Card className="w-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
           <div className="w-full divide-y divide-slate-100">
             <HelpItem
-              title="Having trouble getting AutoGPT running locally?"
+              title="Having trouble getting Indra Ai running locally?"
               description="Ask for help on our"
               linkText="Discord"
               href="https://discord.gg/autogpt"
@@ -106,7 +106,7 @@ export default function AuthFeedback({
               title="Think you've found a bug?"
               description="Open an issue on our"
               linkText="GitHub"
-              href="https://github.com/Significant-Gravitas/AutoGPT"
+              href="https://github.com/Significant-Gravitas/Indra Ai"
             />
 
             <HelpItem

@@ -1,6 +1,6 @@
 # System Library Operations
 <!-- MANUAL: file_description -->
-Blocks for managing agents in your personal AutoGPT library.
+Blocks for managing agents in your personal Indra Ai library.
 <!-- END MANUAL -->
 
 ## Add To Library From Store

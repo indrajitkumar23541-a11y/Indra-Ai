@@ -64,7 +64,7 @@ export async function completeOnboardingWizard(
   const plan = options?.plan ?? "pro";
 
   // Step 1: Welcome — enter name
-  await expect(page.getByText("Welcome to AutoGPT")).toBeVisible({
+  await expect(page.getByText("Welcome to Indra Ai")).toBeVisible({
     timeout: 10000,
   });
   await page.getByLabel("What should I call you?").fill(name);

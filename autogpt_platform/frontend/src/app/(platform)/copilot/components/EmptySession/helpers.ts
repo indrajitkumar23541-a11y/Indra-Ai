@@ -21,7 +21,7 @@ export const DEFAULT_THEMES: SuggestionTheme[] = [
   {
     name: "Learn",
     prompts: [
-      "What can AutoGPT do for me?",
+      "What can Indra Ai do for me?",
       "Show me how agents work",
       "What integrations are available?",
       "How do I schedule an agent?",

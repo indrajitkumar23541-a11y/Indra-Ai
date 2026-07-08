@@ -70,7 +70,7 @@ describe("SettingsMobileNav", () => {
       "Account",
       "Billing",
       "Integrations",
-      "AutoGPT API Keys",
+      "Indra Ai API Keys",
       "Creator Dashboard",
     ];
     for (const label of labels) {

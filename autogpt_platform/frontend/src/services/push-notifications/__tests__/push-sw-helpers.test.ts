@@ -55,7 +55,7 @@ describe("push-sw getNotificationConfig", () => {
       type: "copilot_completion",
       event: "session_completed",
     });
-    expect(config.title).toBe("AutoGPT");
+    expect(config.title).toBe("Indra Ai");
     expect(config.body).toBe("Task completed");
     expect(config.url).toBe("/copilot");
   });
@@ -65,7 +65,7 @@ describe("push-sw getNotificationConfig", () => {
       type: "copilot_completion",
       event: "session_failed",
     });
-    expect(config.title).toBe("AutoGPT");
+    expect(config.title).toBe("Indra Ai");
     expect(config.body).toBe("Task failed");
   });
 
@@ -74,7 +74,7 @@ describe("push-sw getNotificationConfig", () => {
       type: "unknown_type",
       event: "anything",
     });
-    expect(config.title).toBe("AutoGPT Notification");
+    expect(config.title).toBe("Indra Ai Notification");
     expect(config.url).toBe("/");
   });
 
@@ -83,7 +83,7 @@ describe("push-sw getNotificationConfig", () => {
       type: "copilot_completion",
       event: "never_seen_event",
     });
-    expect(config.title).toBe("AutoGPT Notification");
+    expect(config.title).toBe("Indra Ai Notification");
   });
 });
 

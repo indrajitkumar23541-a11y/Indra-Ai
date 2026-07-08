@@ -1,4 +1,4 @@
-# Getting Started with AutoGPT: Self-Hosting Guide
+# Getting Started with Indra Ai: Self-Hosting Guide
 
 ## Introduction
 
@@ -6,7 +6,7 @@ This guide will help you setup the server and builder for the project.
 
 <!-- The video is listed in the root Readme.md of the repo -->
 
-<!--We also offer this in video format. You can check it out [here](https://github.com/Significant-Gravitas/AutoGPT?tab=readme-ov-file#how-to-setup-for-self-hosting). -->
+<!--We also offer this in video format. You can check it out [here](https://github.com/Significant-Gravitas/Indra Ai?tab=readme-ov-file#how-to-setup-for-self-hosting). -->
 
 !!! warning
     **DO NOT FOLLOW ANY OUTSIDE TUTORIALS AS THEY WILL LIKELY BE OUT OF DATE**
@@ -80,7 +80,7 @@ Once you have Docker and Docker Compose installed, you can proceed to the next s
 </details>
 
 ## Quick Setup with Auto Setup Script (Recommended)
-If you're self-hosting AutoGPT locally, we recommend using our official setup script to simplify the process. This will install dependencies (like Docker), pull the latest code, and launch the app with minimal effort.
+If you're self-hosting Indra Ai locally, we recommend using our official setup script to simplify the process. This will install dependencies (like Docker), pull the latest code, and launch the app with minimal effort.
 
 For macOS/Linux:
 ```
@@ -98,22 +98,22 @@ This method is ideal if you're setting up for development or testing and want to
 ## Manual Setup
 
 ### Cloning the Repository
-The first step is cloning the AutoGPT repository to your computer.
+The first step is cloning the Indra Ai repository to your computer.
 To do this, open a terminal window in a folder on your computer and run:
 ```
-git clone https://github.com/Significant-Gravitas/AutoGPT.git
+git clone https://github.com/Significant-Gravitas/Indra Ai.git
 ```
 If you get stuck, follow [this guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 Once that's complete you can continue the setup process.
 
-### Running the AutoGPT Platform
+### Running the Indra Ai
 
 To run the platform, follow these steps:
 
-* Navigate to the `autogpt_platform` directory inside the AutoGPT folder:
+* Navigate to the `autogpt_platform` directory inside the Indra Ai folder:
   ```bash
-   cd AutoGPT/autogpt_platform
+   cd Indra Ai/autogpt_platform
   ```
 
 - Copy the `.env.default` file to `.env` in `autogpt_platform`:
@@ -220,7 +220,7 @@ For more details, refer to [Docker's official documentation](https://docs.docker
 
 ### ⚠️ Podman Not Supported
 
-AutoGPT requires **Docker** (Docker Desktop or Docker Engine). **Podman and podman-compose are not supported** and may cause path resolution issues, particularly on Windows.
+Indra Ai requires **Docker** (Docker Desktop or Docker Engine). **Podman and podman-compose are not supported** and may cause path resolution issues, particularly on Windows.
 
 If you see errors like:
 ```text

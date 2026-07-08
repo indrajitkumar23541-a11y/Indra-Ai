@@ -1,6 +1,6 @@
 # Table of contents
 
-* [AutoGPT Blocks Overview](README.md)
+* [Indra Ai Blocks Overview](README.md)
 
 ## Guides
 

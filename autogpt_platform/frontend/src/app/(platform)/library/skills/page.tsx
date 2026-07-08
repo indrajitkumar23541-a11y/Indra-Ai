@@ -15,7 +15,7 @@ export default function SkillsPage() {
   const { skills, isLoading, error } = useSkillsPage();
 
   useEffect(() => {
-    document.title = "AutoPilot skills – AutoGPT Platform";
+    document.title = "AutoPilot skills – Indra Ai";
   }, []);
 
   return (
