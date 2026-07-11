@@ -78,6 +78,25 @@ Indra Ai leverages a premium, enterprise-grade technology stack:
 
 ---
 
+## 📂 Project Structure
+
+```text
+Indra-Ai/
+├── autogpt_platform/
+│   ├── backend/           # FastAPI based backend execution engine
+│   ├── frontend/          # Next.js + React Flow frontend canvas
+│   ├── autogpt_libs/      # Shared Python libraries for the platform
+│   ├── analytics/         # Telemetry and analytics configurations
+│   ├── db/                # Database migrations and schemas
+│   └── docker-compose.yml # Infrastructure deployment configurations
+├── classic/               # Legacy AI agent components
+├── docs/                  # Project documentation and guides
+├── assets/                # Images and brand assets
+└── README.md              # Project overview
+```
+
+---
+
 ## ⚡ Real-World Use Cases
 
 Here are just a few examples of what you can achieve with **Indra Ai**:
