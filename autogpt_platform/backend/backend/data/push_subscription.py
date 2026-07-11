@@ -90,7 +90,7 @@ async def upsert_push_subscription(
         )
     return await PushSubscription.prisma().upsert(
         where={"userId_endpoint": {"userId": user_id, "endpoint": endpoint}},
-        data={
+        data={  # type: ignore[arg-type]
             "create": {
                 "userId": user_id,
                 "endpoint": endpoint,

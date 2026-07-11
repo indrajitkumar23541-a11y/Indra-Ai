@@ -59,14 +59,14 @@ def _link_base_url() -> str:
 
 async def find_server_link_owner(platform: str, platform_server_id: str) -> str | None:
     link = await PlatformLink.prisma().find_first(
-        where={"platform": platform, "platformServerId": platform_server_id}
+        where={"platform": platform, "platformServerId": platform_server_id}  # type: ignore[arg-type]
     )
     return link.userId if link else None
 
 
 async def find_user_link_owner(platform: str, platform_user_id: str) -> str | None:
     link = await PlatformUserLink.prisma().find_unique(
-        where={
+        where={  # type: ignore[arg-type]
             "platform_platformUserId": {
                 "platform": platform,
                 "platformUserId": platform_user_id,
@@ -110,7 +110,7 @@ async def create_server_link_token(
     # create calls can't leave two valid tokens for the same target.
     async with transaction() as tx:
         await PlatformLinkToken.prisma(tx).update_many(
-            where={
+            where={  # type: ignore[arg-type]
                 "platform": platform,
                 "linkType": LinkType.SERVER.value,
                 "platformServerId": request.platform_server_id,
@@ -119,7 +119,7 @@ async def create_server_link_token(
             data={"usedAt": datetime.now(timezone.utc)},
         )
         await PlatformLinkToken.prisma(tx).create(
-            data={
+            data={  # type: ignore[arg-type]
                 "token": token,
                 "platform": platform,
                 "linkType": LinkType.SERVER.value,
@@ -163,7 +163,7 @@ async def create_user_link_token(
 
     async with transaction() as tx:
         await PlatformLinkToken.prisma(tx).update_many(
-            where={
+            where={  # type: ignore[arg-type]
                 "platform": platform,
                 "linkType": LinkType.USER.value,
                 "platformUserId": request.platform_user_id,
@@ -172,7 +172,7 @@ async def create_user_link_token(
             data={"usedAt": datetime.now(timezone.utc)},
         )
         await PlatformLinkToken.prisma(tx).create(
-            data={
+            data={  # type: ignore[arg-type]
                 "token": token,
                 "platform": platform,
                 "linkType": LinkType.USER.value,
@@ -280,7 +280,7 @@ async def confirm_server_link(token: str, user_id: str) -> ConfirmLinkResponse:
             if updated == 0:
                 raise LinkTokenExpiredError("This link has already been used.")
             await PlatformLink.prisma(tx).create(
-                data={
+                data={  # type: ignore[arg-type]
                     "userId": user_id,
                     "platform": link_token.platform,
                     "platformServerId": link_token.platformServerId,
@@ -339,7 +339,7 @@ async def confirm_user_link(token: str, user_id: str) -> ConfirmUserLinkResponse
             if updated == 0:
                 raise LinkTokenExpiredError("This link has already been used.")
             await PlatformUserLink.prisma(tx).create(
-                data={
+                data={  # type: ignore[arg-type]
                     "userId": user_id,
                     "platform": link_token.platform,
                     "platformUserId": link_token.platformUserId,
@@ -425,7 +425,7 @@ async def refresh_server_link_name(
         # is NULL, not true), so we OR in the explicit NULL case to make
         # sure first-time backfills land for legacy links.
         await PlatformLink.prisma().update_many(
-            where={
+            where={  # type: ignore[arg-type]
                 "platform": platform,
                 "platformServerId": platform_server_id,
                 "OR": [

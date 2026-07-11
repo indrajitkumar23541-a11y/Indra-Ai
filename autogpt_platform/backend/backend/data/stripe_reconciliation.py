@@ -72,7 +72,7 @@ async def reconcile_all_stripe_tiers() -> ReconciliationSummary:
     # left by a missed upgrade webhook. Manual grants (no customer) and ENTERPRISE
     # stay excluded.
     candidates = await User.prisma().find_many(
-        where={
+        where={  # type: ignore[arg-type]
             "stripeCustomerId": {"not": None},
             "subscriptionTier": {"not": SubscriptionTier.ENTERPRISE},
         },

@@ -432,7 +432,7 @@ async def _call_openai_responses(
     timeout_seconds: float,
     service_tier: str | None = None,
 ) -> ProviderResponse:
-    client = openai.AsyncOpenAI(api_key=api_key)
+    client: Any = openai.AsyncOpenAI(api_key=api_key)
     tools_param = convert_tools_to_responses_format(tools) if tools else openai.omit
     text_config: Any = openai.omit
     if force_json_output:
@@ -446,17 +446,17 @@ async def _call_openai_responses(
     if service_tier:
         extra_body["service_tier"] = service_tier
 
-    response = await client.responses.create(
+    response = cast(Any, await client.responses.create(
         model=model,
-        input=messages,  # type: ignore[arg-type]
-        tools=tools_param,  # type: ignore[arg-type]
+        input=messages,
+        tools=tools_param,
         max_output_tokens=max_tokens,
         # Reasoning models (o-series) reject ``temperature`` — same guard
         # as the Anthropic path: only send the field when the caller set
         # one, never a default.
         temperature=temperature if temperature is not None else openai.omit,
         parallel_tool_calls=parallel_tool_calls,
-        text=text_config,  # type: ignore[arg-type]
+        text=text_config,
         store=False,
         timeout=timeout_seconds,
         # ``omit`` is only valid for TYPED params — the SDK strips it
@@ -465,7 +465,7 @@ async def _call_openai_responses(
         # ``_merge_mappings`` raises ``TypeError: 'Omit' object is not a
         # mapping`` on the sentinel. Absent extra_body must be ``None``.
         extra_body=extra_body or None,
-    )
+    ))
 
     raw_tool_calls = extract_responses_tool_calls(response)
     tool_calls = None
@@ -558,7 +558,7 @@ async def _call_anthropic_messages(
         ]
 
     try:
-        resp = await client.messages.create(**create_kwargs)
+        resp = cast(Any, await client.messages.create(**create_kwargs))
     except anthropic.BadRequestError as exc:
         # Self-heal for models the deny-list doesn't know yet.
         if "temperature" not in create_kwargs or not (
@@ -571,7 +571,7 @@ async def _call_anthropic_messages(
             model,
         )
         create_kwargs.pop("temperature")
-        resp = await client.messages.create(**create_kwargs)
+        resp = cast(Any, await client.messages.create(**create_kwargs))
     if not resp.content:
         raise ValueError("No content returned from Anthropic.")
 
@@ -644,7 +644,7 @@ async def _call_groq(
 
     from groq import AsyncGroq  # local import — heavy SDK
 
-    client = AsyncGroq(api_key=api_key)
+    client: Any = AsyncGroq(api_key=api_key)
     response_format = {"type": "json_object"} if force_json_output else None
     create_kwargs: dict[str, Any] = dict(
         model=model,
@@ -657,7 +657,7 @@ async def _call_groq(
     # the caller set one, so models that reject it never see the field.
     if temperature is not None:
         create_kwargs["temperature"] = temperature
-    response = await client.chat.completions.create(**create_kwargs)
+    response = cast(Any, await client.chat.completions.create(**create_kwargs))
     if not response.choices:
         raise ValueError("Groq returned empty choices in response")
     return ProviderResponse(
@@ -699,7 +699,7 @@ async def _call_ollama(
     if temperature is not None:
         options["temperature"] = temperature
 
-    client = ollama.AsyncClient(host=ollama_host, timeout=timeout_seconds)
+    client: Any = ollama.AsyncClient(host=ollama_host, timeout=timeout_seconds)
     response = await client.chat(
         model=model,
         messages=messages,
@@ -801,7 +801,7 @@ async def _call_openai_compat(
     client_kwargs: dict[str, Any] = {"base_url": base_url, "api_key": api_key}
     if default_headers:
         client_kwargs["default_headers"] = default_headers
-    client = openai.AsyncOpenAI(**client_kwargs)
+    client: Any = openai.AsyncOpenAI(**client_kwargs)
 
     call_kwargs: dict[str, Any] = dict(
         model=model,
@@ -840,7 +840,7 @@ async def _call_openai_compat(
     if extra_body:
         call_kwargs["extra_body"] = extra_body
 
-    response = await client.chat.completions.create(**call_kwargs)
+    response = cast(Any, await client.chat.completions.create(**call_kwargs))
     if not response.choices:
         raise ValueError(f"{base_url} returned empty choices in response")
 
@@ -992,6 +992,7 @@ async def call_provider_stream(
         create_kwargs["stream_options"] = stream_options
     if tools:
         create_kwargs["tools"] = cast(list[ChatCompletionToolParam], list(tools))
+    assert client is not None
     return await client.chat.completions.create(**create_kwargs)
 
 
@@ -1039,6 +1040,7 @@ async def call_provider_openai_compat_sync(
         create_kwargs["extra_body"] = extra_body
     if extra_headers:
         create_kwargs["extra_headers"] = extra_headers
+    assert client is not None
     return await client.chat.completions.create(**create_kwargs)
 
 

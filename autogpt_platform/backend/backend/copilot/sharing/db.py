@@ -401,7 +401,7 @@ async def get_shared_chat_file(share_token: str, file_id: str) -> str | None:
     # Backfill the allowlist so repeat downloads skip the re-scan.
     try:
         await SharedChatFile.prisma().create(
-            data={
+            data={  # type: ignore[arg-type]
                 "sessionId": session.id,
                 "fileId": file_id,
                 "shareToken": share_token,
@@ -570,7 +570,7 @@ async def _build_shared_chat_files(
     for file in owned_files:
         try:
             await SharedChatFile.prisma(tx).create(
-                data={
+                data={  # type: ignore[arg-type]
                     "sessionId": session_id,
                     "fileId": file.id,
                     "shareToken": share_token,
@@ -654,7 +654,7 @@ async def _link_executions_to_share(
     for execution in executions:
         try:
             await ChatLinkedShare.prisma(tx).create(
-                data={"sessionId": session_id, "executionId": execution.id}
+                data={"sessionId": session_id, "executionId": execution.id}  # type: ignore[arg-type]
             )
         except UniqueViolationError:
             logger.debug(
@@ -748,7 +748,7 @@ async def _build_shared_execution_file_allowlist(
     for file in owned_files:
         try:
             await SharedExecutionFile.prisma(tx).create(
-                data={
+                data={  # type: ignore[arg-type]
                     "executionId": execution_id,
                     "fileId": file.id,
                     "shareToken": share_token,

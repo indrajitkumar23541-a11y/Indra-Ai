@@ -103,7 +103,7 @@ async def backfill_all_users() -> tuple[int, int]:
         while True:
             where = {"id": {"gt": last_seen_id}} if last_seen_id else {}
             batch = await db.user.find_many(
-                where=where,
+                where=where,  # type: ignore[arg-type]
                 order={"id": "asc"},
                 take=USER_BATCH_SIZE,
             )

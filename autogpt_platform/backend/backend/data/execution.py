@@ -12,6 +12,7 @@ from typing import (
     Literal,
     Mapping,
     Optional,
+    TypeAlias,
     TypeVar,
     cast,
     overload,
@@ -129,8 +130,8 @@ class BlockErrorStats(BaseModel):
 
 
 ExecutionStatus = AgentExecutionStatus
-NodeInputMask = Mapping[str, JsonValue]
-NodesInputMasks = Mapping[str, NodeInputMask]
+NodeInputMask: TypeAlias = Mapping[str, JsonValue]
+NodesInputMasks: TypeAlias = Mapping[str, NodeInputMask]
 
 # dest: source
 VALID_STATUS_TRANSITIONS = {

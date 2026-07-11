@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 async def record_bot_event(event: BotEventInput) -> None:
     await BotEvent.prisma().create(
-        data={
+        data={  # type: ignore[arg-type]
             "platform": event.platform.value,
             "eventType": event.event_type,
             "serverId": event.server_id,
@@ -37,13 +37,13 @@ async def record_bot_event(event: BotEventInput) -> None:
 
 async def record_guild_joined(guild: BotGuildInput) -> None:
     await BotGuild.prisma().upsert(
-        where={
+        where={  # type: ignore[arg-type]
             "platform_serverId": {
                 "platform": guild.platform.value,
                 "serverId": guild.server_id,
             }
         },
-        data={
+        data={  # type: ignore[arg-type]
             "create": {
                 "platform": guild.platform.value,
                 "serverId": guild.server_id,
@@ -60,7 +60,7 @@ async def record_guild_joined(guild: BotGuildInput) -> None:
 
 async def mark_guild_left(platform: Platform, server_id: str) -> None:
     await BotGuild.prisma().update_many(
-        where={
+        where={  # type: ignore[arg-type]
             "platform": platform.value,
             "serverId": server_id,
             "leftAt": None,
@@ -77,7 +77,7 @@ async def sync_guild_presence(platform: Platform, guilds: list[BotGuildInput]) -
 
     present = {guild.server_id for guild in guilds}
     joined = await BotGuild.prisma().find_many(
-        where={"platform": platform.value, "leftAt": None}
+        where={"platform": platform.value, "leftAt": None}  # type: ignore[arg-type]
     )
     stale_ids = [row.id for row in joined if row.serverId not in present]
     if stale_ids:

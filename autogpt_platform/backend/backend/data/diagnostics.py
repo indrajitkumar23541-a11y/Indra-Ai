@@ -11,6 +11,7 @@ from typing import List, Optional
 from croniter import croniter
 from prisma.enums import AgentExecutionStatus
 from prisma.models import AgentGraph, AgentGraphExecution, LibraryAgent, User
+from prisma.types import AgentGraphExecutionInclude
 from pydantic import BaseModel
 
 from backend.data.db import query_raw_with_schema
@@ -192,7 +193,7 @@ def _to_running_execution_detail(
     )
 
 
-_EXECUTION_ADMIN_INCLUDE = {
+_EXECUTION_ADMIN_INCLUDE: AgentGraphExecutionInclude = {
     "AgentGraph": True,
     "User": True,
 }
@@ -1150,7 +1151,7 @@ async def cleanup_orphaned_executions_bulk(
     # Only update executions still in RUNNING/QUEUED status to avoid
     # overwriting a legitimately COMPLETED execution (TOCTOU guard)
     result = await AgentGraphExecution.prisma().update_many(
-        where={
+        where={  # type: ignore[arg-type]
             "id": {"in": execution_ids},
             "isDeleted": False,
             "executionStatus": {
